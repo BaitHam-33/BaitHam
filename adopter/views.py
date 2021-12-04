@@ -8,7 +8,6 @@ def home(request):
     animals = Animal.objects.all()
     return render(request, 'adopter/home.html', {'animals': animals})
 
-
 def articles(request):
     return render(request, 'adopter/articles.html')
 
@@ -27,3 +26,4 @@ def stories(request):
     else:
         form = storiesform()
         return render(request, 'adopter/stories.html', {'form': form})
+
