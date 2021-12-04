@@ -41,7 +41,6 @@ INSTALLED_APPS = [
     'Report',
     'Animal',
     'Article',
-    'success_story',
 ]
 
 MIDDLEWARE = [
