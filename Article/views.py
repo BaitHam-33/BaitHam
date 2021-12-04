@@ -1,7 +1,5 @@
 from django.shortcuts import render
 
-
-
 def articles_dog(request):
     return render(request, 'Article/articles_dog.html')
 
