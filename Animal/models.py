@@ -5,5 +5,6 @@ class Animal(models.Model):
     image = models.ImageField(upload_to='animal/images')
     text = models.TextField(blank=True)
 
+
     def __str__(self):
         return self.name
