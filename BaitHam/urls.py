@@ -9,6 +9,11 @@ app_name = 'adopter'
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.home, name='home'),
+
+    path('Report/', include('Report.urls')),
+    path('Article/', include('Article.urls')),
+    path('success_story/', include('success_story.urls')),
+
     path('stories/', views.stories, name='stories'),
     path('Report/', include('Report.urls')),
     path('Article/', include('Article.urls')),

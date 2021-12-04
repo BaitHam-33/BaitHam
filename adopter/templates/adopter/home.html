@@ -30,7 +30,15 @@ div {text-align: center;}
 {% for animal in animals %}
     <div class="col-lg-4 col-md-6">
         <h5><b>{{ animal.name }}</b></h5>
+
+        <img src="{{ animal.image.url }}" class="rounded" height=300 width=300>
+        <b><p>{{ animal.text }}</p></b>
+        <a role="button" href=" " class="btn btn-secondary">אמצו אותי</a>
+        <br>
+        <br>
+
     <img src="{{ animal.image.url }}" class="img-fluid mb-2" height=300 width=300>
+
     </div>
 {% endfor %}
 

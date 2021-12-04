@@ -2,29 +2,12 @@
 {% extends 'adopter/Base.html' %}
 {% block content %}
 
-
-    <!doctype html>
-<html lang="he" dir="rtl">
-
-    <html>
-<head>
-<style>
-h1 {text-align: center;}
-p {text-align: center;}
-div {text-align: center;}
-</style>
-</head>
-<body>
-
-    <h1>דיווח על בע"ח נטושים</h1>
+    <h1>הכנסת סיפור חדש</h1>
     <br>
     <form method="POST">
         {% csrf_token %}
     {{ form.as_p }}
-
-        <button type="submit">שלח</button>
-
-        <button type="submit">Create</button>
+        <button type="submit">share</button>
     </form>
 
  {% endblock %}
