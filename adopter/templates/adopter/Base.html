@@ -54,35 +54,37 @@
                                 חתולים</a></li>
                         </ul>
                     </div>
-                <li>
-                    <a role="button" href="{% url 'home' %}" class="btn btn-info">מטלות</a>
-                </li>
-                &#160
+                <li> &#160
                 <a role="button" href="{% url 'home' %}" class="btn btn-info">פורום</a>
                 </li> &#160
+                <li>
                 <a role="button" href="{% url 'home' %}" class="btn btn-info">אירועי עמותה</a>
                 </li> &#160
-
+                <li>
                 <a role="button" href="{% url 'success_story:all_stories' %}" class="btn btn-info">סיפורי הצלחה</a>
                 </li> &#160
-
+                <li>
                 <a role="button" href="{% url 'home' %}" class="btn btn-info">מאגר בע"ח</a>
                 </li> &#160
+                <li>
                 <a role="button" href="{% url 'home' %}" class="btn btn-info">תרומות</a>
                 </li> &#160
+                <li>
                 <a role="button" href="{% url 'home' %}" class="btn btn-info">דו"חות</a>
                 </li> &#160
-
+                <li>
                 <a role="button" href="{% url 'Report:createReport' %}" class="btn btn-danger">כפתור אדום</a>
-                </li> &#160
-
+                <li>&#160
+                <a role="button" href="{% url 'volunteer:loginuser' %}" class="btn btn-dark">התחברות</a>
+                </li>&#160
 
             </ul>
         </div>
     </div>
 </nav>
 <div class="container">
-    {% block content %}{% endblock %}
+    {% block content %}
+    {% endblock %}
 </div>
 
 <!-- Optional JavaScript -->

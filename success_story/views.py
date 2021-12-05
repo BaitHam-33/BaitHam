@@ -1,7 +1,7 @@
 from django.shortcuts import render, redirect
 from .forms import storyForm
 from .models import story
-
+from volunteer import views
 
 def create_story(request):
     if request.method == 'GET':
