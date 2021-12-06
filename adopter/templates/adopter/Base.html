@@ -32,7 +32,7 @@
 <nav id="topNav" class="navbar navbar-expand-md navbar-light">
     <div class="container">
         <a class="navbar-brand" href="{% url 'home' %}">
-            <img src="{% static "adopter/Logo.jpeg" %}" width="70" height="40" class="d-inline-block align-top"
+            <img src="{% static 'adopter/Logo.jpeg' %}" width="70" height="40" class="d-inline-block align-top"
                  alt="BaitHam's Logo">
             <span></span>
         </a>
@@ -57,7 +57,9 @@
                                 חתולים</a></li>
                         </ul>
                     </div>
+
                 <li> &#160
+
                 <a role="button" href="{% url 'home' %}" class="btn btn-info">פורום</a>
                 </li> &#160
                 <li>
@@ -67,7 +69,8 @@
                 <a role="button" href="{% url 'success_story:all_stories' %}" class="btn btn-info">סיפורי הצלחה</a>
                 </li> &#160
                 <li>
-                <a role="button" href="{% url 'home' %}" class="btn btn-info">מאגר בע"ח</a>
+                <a role="button" href="{% url 'Animal:all_animals' %}" class="btn btn-info">מאגר בע"ח</a>
+
                 </li> &#160
                 <li>
                 <a role="button" href="{% url 'home' %}" class="btn btn-info">תרומות</a>
