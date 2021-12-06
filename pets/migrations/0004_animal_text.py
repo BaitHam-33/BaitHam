@@ -6,12 +6,12 @@ from django.db import migrations, models
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('Animal', '0003_animal'),
+        ('pets', '0003_animal'),
     ]
 
     operations = [
         migrations.AddField(
-            model_name='animal',
+            model_name='pets',
             name='text',
             field=models.TextField(blank=True),
         ),
