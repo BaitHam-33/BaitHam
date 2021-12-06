@@ -14,6 +14,8 @@ urlpatterns = [
     path('success_story/', include('success_story.urls')),
     path('Animal/', include('Animal.urls'), name='Animal'),
     path('Animal/<int:id>', include('Animal.urls'), name='Animal'),
+    path('volunteer/', include('volunteer.urls')),
+
 ]
 
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
