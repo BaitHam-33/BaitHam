@@ -3,11 +3,9 @@ from django.shortcuts import render, redirect
 from Animal.forms import Add_Animal_Form
 from .models import animal
 
-
-
 def all_animals(request):
-    animals = animal.objects.all()
-    return render(request, 'Animal/all_animals.html', {'animals': animals})
+    #animals = animal.objects.all()
+    return render(request, 'Animal/all_animals.html')
 
 
 def add_Animal(request):
