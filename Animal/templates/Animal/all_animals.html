@@ -28,8 +28,10 @@
 <br>
 <br>
 <div>
+{% if user.is_authenticated %}
     <a role="button" href="{% url 'Animal:add_Animal'%} " class="btn btn-dark">הוסף בעל חיים למאגר</a>
     <br>
+{% endif %}
 </div>
 <br>
 <br>
