@@ -3,6 +3,7 @@ from django.conf.urls.static import static
 from django.contrib import admin
 from django.urls import path, include
 from adopter import views
+from django.conf.urls import url,include
 
 app_name = 'adopter'
 
@@ -16,6 +17,7 @@ urlpatterns = [
     path('Report/', include('Report.urls')),
     path('Article/', include('Article.urls')),
     path('volunteer/', include('volunteer.urls')),
+    url(r'Donations/',include('Donations.urls')),
 ]
 
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

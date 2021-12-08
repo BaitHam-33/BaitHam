@@ -44,6 +44,8 @@ INSTALLED_APPS = [
     'Article',
     'success_story',
     'volunteer',
+    'Donations.apps.DonationsConfig'
+
 ]
 
 MIDDLEWARE = [

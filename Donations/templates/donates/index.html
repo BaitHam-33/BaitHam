@@ -1,0 +1,23 @@
+{% extends "adopter/Base.html" %}
+{% block content %}
+<body>
+<div>
+    <form class = "Donors" action= "{ % url 'Donations:submit' % }" method="post">
+    {%csrf_token %}
+    <input type="text" name="name" id="name" placeholder="Name"/>
+    <input type="credit" name="credit" id="credit" placeholder="credit">
+    <button type="submit">send</button>
+    </form>
+</div>
+
+</body>
+
+{% endblock %}
+
+
+
+
+
+
+
+

@@ -1,0 +1,17 @@
+{% extends "adopter/Base.html" %}
+{%block content%}
+<body>
+
+<h1>Donations</h1>
+
+{% for i in Donors %}
+<div  class ="The_donations">
+    <h2>{{i.name}}</h2>
+    <h3> {{i.credit}}</h3>
+</div>
+
+
+
+</body>
+
+{% endblock %}
