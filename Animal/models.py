@@ -12,7 +12,7 @@ class animal(models.Model):
     description = models.TextField(blank=True)  # Description like where was found etc...
     sex = models.CharField(max_length= 30 ,choices=Sex_Choice, blank=True)  # Gender (can leave empty)
     submission_date = models.DateTimeField(default=date.today)  # Date submitted to shelter
-    image = models.ImageField(upload_to='Animal/images', blank=True) # for animal images
+    image = models.ImageField(upload_to='Animal', blank=True) # for animal images
 
     def __str__(self):
         return self.name

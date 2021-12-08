@@ -15,7 +15,7 @@ div {text-align: -webkit-center;}
 <div>
     <h1>Add Animal</h1>
     <br>
-    <form method="POST">
+    <form class="form-horizontal form_middle" enctype='multipart/form-data' method="POST">
         {% csrf_token %}
         {{ form.as_p }}
         <button type="submit">Submit</button>
