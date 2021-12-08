@@ -1,14 +1,13 @@
 from django.urls import path
-from . import views
+from .views import articles_dog, articles_cat
 
 
 app_name = 'Article'
 
 urlpatterns = [
 
-    path('article_cat/', views.articles_cat, name='article_cat'),
-    path('article_dog/', views.articles_dog, name='article_dog'),
+    path('articles_cat/', articles_cat, name='article_cat'),
+    path('articles_dog/', articles_dog, name='article_dog'),
 
-    path('articles/', views.articles, name='articles'),
-
+    #path('articles/', articles, name='articles'),
 ]
