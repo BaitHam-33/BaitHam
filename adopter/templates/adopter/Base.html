@@ -42,58 +42,6 @@
             <span class="navbar-toggler-icon"></span>
         </button>
 
-        {% if user.is_authenticated %}
-
-        <div class="collapse navbar-collapse text-center" id="navbarNav">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                    <div class="dropdown">
-                        <button class="btn btn-info" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
-                                aria-expanded="false">
-                            מאמרים
-                        </button>
-                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                            <li><a class="dropdown-item" href="Article\articles_dog.html">מאמרים על
-                                כלבים</a></li>
-                            <li><a class="dropdown-item" href="Article\articles_cat.html">מאמרים על
-                                חתולים</a></li>
-                        </ul>
-                    </div>
-
-                <li> &#160
-
-                <a role="button" href="{% url 'home' %}" class="btn btn-info">פורום</a>
-                </li> &#160
-                <li>
-                <a role="button" href="{% url 'home' %}" class="btn btn-info">אירועי עמותה</a>
-                </li> &#160
-                <li>
-                <a role="button" href="{% url 'success_story:all_stories' %}" class="btn btn-info">סיפורי הצלחה</a>
-                </li> &#160
-                <li>
-                <a role="button" href="{% url 'Animal:all_animals' %}" class="btn btn-info">מאגר בע"ח</a>
-
-                </li> &#160
-                <li>
-                <a role="button" href="{% url 'home' %}" class="btn btn-info">תרומות</a>
-                </li> &#160
-                <li>
-                <a role="button" href="{% url 'home' %}" class="btn btn-info">דו"חות</a>
-                </li> &#160
-                <li>
-                <a role="button" href="{% url 'Report:createReport' %}" class="btn btn-danger">כפתור אדום</a>
-                <li>&#160
-
-
-                <li>
-                        <form class="logout-link" action="{% url 'volunteer:logoutuser' %}" method="post">
-                        {% csrf_token %}
-                            <button type="submit" class="btn btn-dark">התנתק</button>
-                        </form>
-                        </li>
-
-                {%else%}
-
                 <div class="collapse navbar-collapse text-center" id="navbarNav">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
@@ -103,9 +51,9 @@
                             מאמרים
                         </button>
                         <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                            <li><a class="dropdown-item" href="Article\articles_dog.html">מאמרים על
+                            <li><a class="dropdown-item" href={% url 'Article:article_dog' %}>מאמרים על
                                 כלבים</a></li>
-                            <li><a class="dropdown-item" href="Article\articles_cat.html">מאמרים על
+                            <li><a class="dropdown-item" href={% url 'Article:article_cat' %}>מאמרים על
                                 חתולים</a></li>
                         </ul>
                     </div>
@@ -130,11 +78,25 @@
                 <li>
                 <a role="button" href="{% url 'Report:createReport' %}" class="btn btn-danger">כפתור אדום</a>
                 <li>&#160
-
-                <a role="button" href="{% url 'volunteer:loginuser' %}" class="btn btn-dark">התחבר</a>
-                </li>&#160
+                {% if user.is_authenticated %}
+                    <li>
+                        <form class="logout-link" action="{% url 'volunteer:logoutuser' %}" method="post">
+                        {% csrf_token %}
+                            <button type="submit" class="btn btn-dark">התנתק</button>
+                        </form>
+                        </li>
+                {% else %}
+                    <li>
+                        <a role="button" href="{% url 'volunteer:loginuser' %}" class="btn btn-dark">התחבר</a>
+                    </li>&#160
 
                 {% endif %}
+
+            {% if user.is_authenticated and user.is_superuser %}
+                 <li>&#160
+                        <a role="button" href="{% url 'admin' %}" class="btn btn-dark">ניהול</a>
+                 </li>&#160
+             {% endif %}
 
             </ul>
         </div>
