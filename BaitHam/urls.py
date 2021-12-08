@@ -3,21 +3,19 @@ from django.conf.urls.static import static
 from django.contrib import admin
 from django.urls import path, include
 from adopter import views
-from django.conf.urls import url,include
 
 app_name = 'adopter'
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
+    path('admin/',admin.site.urls),
     path('', views.home, name='home'),
+    path('admin/', views.admin, name='admin'),
+    path('Report/',include('Report.urls')),
+    path('Article/',include('Article.urls')),
+    path('success_story/',include('success_story.urls')),
+    path('Animal/',include('Animal.urls'), name='Animal'),
+    path('volunteer/',include('volunteer.urls')),
 
-    path('Report/', include('Report.urls')),
-    path('Article/', include('Article.urls')),
-    path('success_story/', include('success_story.urls')),
-    path('Report/', include('Report.urls')),
-    path('Article/', include('Article.urls')),
-    path('volunteer/', include('volunteer.urls')),
-    url(r'Donations/',include('Donations.urls')),
 ]
 
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
