@@ -29,7 +29,7 @@ def addInForum(request):
             form.save()
             return redirect('')
     context = {'form': form}
-    return render(request, 'forum/addInForum.html')#, context)
+    return render(request, 'forum/addInForum.html', context)
 
 
 def addInDiscussion(request):
