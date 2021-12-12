@@ -5,7 +5,7 @@ from .models import animal
 
 def all_animals(request):
     animals = animal.objects.all()
-    return render(request, 'Animal/all_animals.html',{'animals':animals})
+    return render(request, 'Animal/all_animals.html',{animals:animals})
 
 
 def add_Animal(request):
