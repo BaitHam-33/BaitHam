@@ -14,5 +14,5 @@ def createReport(request):
 
 
 def all_reports(request):
-    reports = report.objects.all()
+    reports = report.objects.order_by('-date')
     return render(request, 'Report/all_reports.html', {'reports': reports})
