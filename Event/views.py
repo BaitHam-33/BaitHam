@@ -4,7 +4,7 @@ from .forms import EventForm
 
 def createEvent(request):
     if request.method == 'GET':
-        return render(request, 'Report/createEvent.html', {'form': EventForm()})
+        return render(request, 'Event/createEvent.html', {'form': EventForm()})
     else:
         form = EventForm(request.POST)
         new_event = form.save(commit=False)
