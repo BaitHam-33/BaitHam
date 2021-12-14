@@ -60,7 +60,7 @@
                 <a role="button" href="{% url 'home' %}" class="btn btn-info">פורום</a>
                 </li> &#160
                 <li>
-                <a role="button" href="{% url 'home' %}" class="btn btn-info">אירועי עמותה</a>
+                <a role="button" href="{% url 'Event:all_events' %}" class="btn btn-info">אירועי עמותה</a>
                 </li> &#160
                 <li>
                 <a role="button" href="{% url 'success_story:all_stories' %}" class="btn btn-info">סיפורי הצלחה</a>
@@ -78,12 +78,18 @@
                 <a role="button" href="{% url 'Report:createReport' %}" class="btn btn-danger">כפתור אדום</a>
                 <li>&#160
                 {% if user.is_authenticated %}
+
+                    <li>
+                    <a role="button" href="{% url 'Report:all_reports' %}" class="btn btn-danger">דיווחים</a>
+                    </li>&#160
+
                     <li>
                         <form class="logout-link" action="{% url 'volunteer:logoutuser' %}" method="post">
                         {% csrf_token %}
                             <button type="submit" class="btn btn-dark">התנתק</button>
                         </form>
-                        </li>
+                        </li> &#160
+
                 {% else %}
                     <li>
                         <a role="button" href="{% url 'volunteer:loginuser' %}" class="btn btn-dark">התחבר</a>
@@ -93,7 +99,7 @@
 
             {% if user.is_authenticated and user.is_superuser %}
                  <li>&#160
-                        <a role="button" href="{% url 'admin' %}" class="btn btn-dark">ניהול</a>
+                        <a role="button" href="{% url 'admin' %}" class="btn btn-light">ניהול</a>
                  </li>&#160
              {% endif %}
 
