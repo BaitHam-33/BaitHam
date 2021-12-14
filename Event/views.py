@@ -26,3 +26,11 @@ def deleteEvent(request, event_id):
     Event = event.objects.get(pk=event_id)
     Event.delete() # delete the report from the database
     return redirect('Event:all_events') # refers to the page of all events
+
+def Event_detail(request, id=None):
+    """the function presents a single page of each event according to the user request"""
+    event_obj = None
+    if id is not None:
+        event_obj = event.objects.get(id=id)
+    context = {"object": event_obj}
+    return render(request, 'Event/event_detail.html', context=context)

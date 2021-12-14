@@ -45,7 +45,8 @@
          <h5><b>{{ event.name }}</h5></b>
         <h4 class="text-muted">{{ event.date|date:'D M,Y'|upper }}</h4>
         <p>{{ event.text|striptags}}</p>
-        <img  src={% if event.image %}{{ event.image.url }} {% endif %} class="rounded" height=300 width=400></a>
+        <a href="/Event/event_detail/{{event.id}} "><img  src={% if event.image %}{{ event.image.url }}{% endif %}
+          class="rounded" height=300 width=400></a>
         <br>
     <br>
         {% if user.is_authenticated and user.is_superuser %}
