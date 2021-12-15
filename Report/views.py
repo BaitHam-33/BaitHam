@@ -14,11 +14,5 @@ def createReport(request):
 
 
 def all_reports(request):
-    reports = report.objects.order_by('-date')
+    reports = report.objects.all()
     return render(request, 'Report/all_reports.html', {'reports': reports})
-
-
-def deleteReport(request, report_id):
-    Report = report.objects.get(pk=report_id)
-    Report.delete()
-    return redirect('Report:all_reports')
