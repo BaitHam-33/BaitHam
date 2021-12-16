@@ -19,7 +19,7 @@ def home(request):
         comment = CreateInDiscussion(request.POST)
         if comment.is_valid():
             comment.save()
-            redirect('forum:home')
+            return redirect('forum:home')
     context = {'forums': forums,
                'count': count,
                'discussions': discussions,
@@ -39,12 +39,13 @@ def addInForum(request):
 
 
 def addInDiscussion(request):
+
     form = CreateInDiscussion()
     if request.method == 'POST':
         form = CreateInDiscussion(request.POST)
         if form.is_valid():
             form.save()
-            return redirect('')
+            return redirect('adopter:home')
     context = {'form': form}
     return render(request, 'forum/addInDiscussion.html', context)
 
