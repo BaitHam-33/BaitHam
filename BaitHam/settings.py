@@ -44,6 +44,9 @@ INSTALLED_APPS = [
     'Article',
     'success_story',
     'volunteer',
+    'Event',
+    'Donations',
+
     'forum',
 ]
 

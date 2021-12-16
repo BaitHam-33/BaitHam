@@ -34,8 +34,15 @@
         <h5 class="text-muted">{{ report.date|date:'d M Y'|upper }}</h5>
         <h2>{{ report.name }}</h2>
         <p>{{ report.text|striptags}}</p>
+        <a href="{% url 'Report:deleteReport' report.id %}" class="btn btn-dark">נאסף</a>
     </div>
 </div>
+
 {% endfor %}
 
+    <br>
+    <br>
+    <a role="button" href="{% url 'Report:createReport' %}" class="btn btn-warning">להוספת דיווח נוסף</a>
+    <br>
+    <br>
 {% endblock %}
