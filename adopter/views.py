@@ -1,10 +1,12 @@
-from django.shortcuts import render, get_object_or_404, redirect
-from Animal.models import Animal
+from django.http import HttpResponseRedirect
+from django.shortcuts import render
+from django.urls import reverse
+from Animal.models import animal
+
 
 def home(request):
-    animals = Animal.objects.all()
+    animals = animal.objects.all()
     return render(request, 'adopter/home.html', {'animals': animals})
 
-def articles(request):
-    return render(request, 'adopter/articles.html')
-
+def admin ():
+    return HttpResponseRedirect(reverse('admin:index'))
