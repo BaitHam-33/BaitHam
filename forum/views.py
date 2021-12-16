@@ -12,13 +12,19 @@ def home(request):
     forums = forum.objects.all()
     count = forums.count()
     discussions = []
+    comment=CreateInDiscussion()
     for i in forums:
         discussions.append(i.discussion_set.all())
-
+    if request.method=='POST':
+        comment = CreateInDiscussion(request.POST)
+        if comment.is_valid():
+            comment.save()
+            redirect('forum:home')
     context = {'forums': forums,
                'count': count,
-               'discussions': discussions}
-    return render(request, 'forum/home.html')#, context)
+               'discussions': discussions,
+               'comment':comment}
+    return render(request, 'forum/home.html', context)
 
 
 def addInForum(request):
@@ -27,7 +33,7 @@ def addInForum(request):
         form = CreateInForum(request.POST)
         if form.is_valid():
             form.save()
-            return redirect('')
+            return redirect('forum:home')
     context = {'form': form}
     return render(request, 'forum/addInForum.html', context)
 
