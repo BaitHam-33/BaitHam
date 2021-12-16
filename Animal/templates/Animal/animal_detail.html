@@ -22,10 +22,24 @@
     <title>{{object.name}}</title>
 </head>
 <body>
+    {% if user.is_authenticated %}
+        <a role="button" href="{% url 'Animal:editAnimal' object.id %}" class="btn btn-secondary">ערוך</a>
+        <a role="button" href="{% url 'Animal:deleteAnimal' object.id %}" class="btn btn-secondary">הסר</a>
+    {% endif %}
+
 <h1>{{object.name}}</h1>
 <img src = {{object.image.url}} class="rounded" height=300 width=300> <br>
  <h5>תיאור</h5>
-<b>{{object.description}}</b> <br>
+<b>{{object.description}}</b> <br> <br>
+<b>{{object.breed}}</b> <br>
+
+
+
+<p>{% if object.species == 'dog' %}
+<h5> סוג: כלב</h5>
+{% else %}
+<h5> סוג: חתול</h5></p>
+{% endif %}
 
 <p>{% if object.sex == 'M' %}
 <h5> מין: זכר</h5>
