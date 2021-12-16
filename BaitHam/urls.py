@@ -15,6 +15,8 @@ urlpatterns = [
     path('success_story/',include('success_story.urls')),
     path('Animal/',include('Animal.urls'), name='Animal'),
     path('volunteer/',include('volunteer.urls')),
+    path('Event/',include('Event.urls')),
+    path('Donations/',include('Donations.urls'), name='Donations)'),
 
 ]
 
