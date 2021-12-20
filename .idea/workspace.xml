@@ -2,16 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d3f605eb-49a7-4797-8f65-1fca2f9fa66d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Donations/templates/Donations/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BaitHam/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/BaitHam/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BaitHam/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/BaitHam/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Donations/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/Donations/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Donations/donates" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Donations/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/Donations/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Donations/templates/alldonates/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Donations/templates/donates/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Donations/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/Donations/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Donations/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/Donations/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/adopter/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/adopter/forms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/adopter/tests.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/adopter/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/adopter/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -22,18 +17,22 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Python Script" />
         <option value="HTML File" />
+        <option value="Python Script" />
+        <option value="Python Unit Test" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="daniel" />
+        <entry key="$PROJECT_DIR$" value="main" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="21b9W409P3fSnfY4A0jUiGm5s2X" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -85,6 +84,8 @@
       <option name="presentableId" value="Default" />
       <updated>1638198948336</updated>
       <workItem from="1638198949741" duration="1545000" />
+      <workItem from="1639924990326" duration="812000" />
+      <workItem from="1639996222120" duration="2495000" />
     </task>
     <servers />
   </component>
@@ -101,6 +102,5 @@
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>

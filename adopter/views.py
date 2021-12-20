@@ -8,5 +8,5 @@ def home(request):
     animals = animal.objects.all()
     return render(request, 'adopter/home.html', {'animals': animals})
 
-def admin ():
+def admin (request):
     return HttpResponseRedirect(reverse('admin:index'))
