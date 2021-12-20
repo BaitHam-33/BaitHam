@@ -66,6 +66,9 @@ def editAnimal(request, id=None):
 def deleteAnimal(requset, id):
     animal_obj = animal.objects.get(id=id)
     if requset.method == 'POST':
+        if animal_obj.image and animal_obj.image != 'default.png':
+            print("jjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj")
+            animal_obj.image.delete()
         animal_obj.delete()
         return redirect('Animal:all_animals')
 
