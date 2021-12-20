@@ -46,7 +46,7 @@ INSTALLED_APPS = [
     'volunteer',
     'Event',
     'Donations',
-
+    'Supplier',
     'forum',
 ]
 
