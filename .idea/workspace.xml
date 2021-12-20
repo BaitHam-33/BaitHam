@@ -3,11 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="d3f605eb-49a7-4797-8f65-1fca2f9fa66d" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Animal/tests/test_views.py" beforeDir="false" afterPath="$PROJECT_DIR$/Animal/tests/test_views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BaitHam/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/BaitHam/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/adopter/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/adopter/forms.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/adopter/tests.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/adopter/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/adopter/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/adopter/tests/test_urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/adopter/tests/test_urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/adopter/tests/test_views.py" beforeDir="false" afterPath="$PROJECT_DIR$/adopter/tests/test_views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,7 +84,9 @@
       <updated>1638198948336</updated>
       <workItem from="1638198949741" duration="1545000" />
       <workItem from="1639924990326" duration="812000" />
-      <workItem from="1639996222120" duration="2495000" />
+      <workItem from="1639996222120" duration="2659000" />
+      <workItem from="1640009828406" duration="4000" />
+      <workItem from="1640012318870" duration="1041000" />
     </task>
     <servers />
   </component>

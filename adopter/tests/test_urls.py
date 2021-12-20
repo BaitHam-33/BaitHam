@@ -9,6 +9,6 @@ class TestUrls(unittest.TestCase):
         self.assertEqual(resolve(url).func, home)  # checks if the url pattern resolved to the right view function
 
     def test_admin_page_url_is_resolved(self):
-        url = reverse('admin')
+        url = reverse('admin_page')
         self.assertEqual(url, '/admin_page/')  # check if the url we want is same as we got
         self.assertEqual(resolve(url).func, admin)  # checks if the url pattern resolved to the right view function
