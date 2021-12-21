@@ -19,6 +19,9 @@ urlpatterns = [
     path('Event/',include('Event.urls')),
     path('Donations/',include('Donations.urls'), name='Donations)'),
     path('forum/', include('forum.urls'), name='forum'),
+    path('Taskboard/',include('Taskboard.urls'), name='Taskboard)'),
+
+
 ]
 
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
