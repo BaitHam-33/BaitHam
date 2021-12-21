@@ -4,7 +4,10 @@ from .models import animal
 
 
 def all_animals(request):
-    animals = animal.objects.all()
+    if request.user.is_authenticated:
+        animals = animal.objects.all()
+    else:
+        animals = animal.objects.filter(Adoption='Y')
     return render(request, 'Animal/all_animals.html', {'animals': animals})
 
 

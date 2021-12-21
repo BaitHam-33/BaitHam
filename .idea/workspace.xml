@@ -3,8 +3,14 @@
   <component name="ChangeListManager">
     <list default="true" id="d3f605eb-49a7-4797-8f65-1fca2f9fa66d" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Animal/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/Animal/forms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Animal/templates/Animal/all_animals.html" beforeDir="false" afterPath="$PROJECT_DIR$/Animal/templates/Animal/all_animals.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Animal/templates/Animal/animal_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/Animal/templates/Animal/animal_detail.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Animal/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/Animal/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/adopter/templates/adopter/Base.html" beforeDir="false" afterPath="$PROJECT_DIR$/adopter/templates/adopter/Base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/adopter/forms.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/adopter/templates/adopter/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/adopter/templates/adopter/home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/adopter/templates/adopter/stories.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/adopter/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/adopter/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -15,9 +21,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="Python Script" />
         <option value="Python Unit Test" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -86,7 +92,7 @@
       <workItem from="1639996222120" duration="2659000" />
       <workItem from="1640009828406" duration="4000" />
       <workItem from="1640012318870" duration="1561000" />
-      <workItem from="1640027749228" duration="320000" />
+      <workItem from="1640027749228" duration="8365000" />
     </task>
     <servers />
   </component>

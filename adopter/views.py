@@ -5,7 +5,10 @@ from Animal.models import animal
 
 
 def home(request):
-    animals = animal.objects.all()
+    if request.user.is_authenticated:
+        animals = animal.objects.all()
+    else:
+        animals = animal.objects.filter(Adoption='Y')
     return render(request, 'adopter/home.html', {'animals': animals})
 
 def admin (request):

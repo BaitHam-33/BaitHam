@@ -39,6 +39,7 @@
 
 {% for animal in animals %}
 <div class="col-lg-4 col-md-6">
+
     <h5><b>{{ animal.name }}</b></h5>
     <a href="/Animal/animal_detail/{{animal.id}} ">
     <img  src={% if animal.image %}
@@ -47,9 +48,10 @@
           class="rounded" height=300 width=300></a>
     <b><p>{{ animal.description }}</p></b>
 
-    <a role="button" href=" " class="btn btn-secondary">אמצו אותי</a>
+    <a role="button" href="{% url 'Animal:animal_detail' animal.id %}" class="btn btn-secondary">לפרטים מלאים עליי</a>
     <br>
     <br>
+
 
 </div>
 {% endfor %}

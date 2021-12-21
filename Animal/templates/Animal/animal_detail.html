@@ -21,37 +21,45 @@
     <meta charset="UTF-8">
     <title>{{object.name}}</title>
 </head>
-<body>
+
     {% if user.is_authenticated %}
         <a role="button" href="{% url 'Animal:editAnimal' object.id %}" class="btn btn-secondary">ערוך</a>
         <a role="button" href="{% url 'Animal:deleteAnimal' object.id %}" class="btn btn-secondary">הסר</a>
     {% endif %}
 
-<h1>{{object.name}}</h1>
+
+<h3>{{object.name}}</h3>
  <img  src={% if object.image %}
                 {{ object.image.url }}
         {% else %}
                 "media/default.png"
         {% endif %}
-          class="rounded" height=300 width=300><br>
-    <h5>תיאור</h5>
-<b>{{object.description}}</b> <br> <br>
+          class="rounded" height=300 width=300 alt="{{ animal.name }}"><br>
+    <h4>תיאור</h4>
+<b>{{object.description}}</b> <br>
+
 <b>{{object.breed}}</b> <br>
 
 
+{##}
+{#<p>{% if object.species == 'dog' %}</p>#}
+{#<h4> סוג: כלב</h4>#}
+{#{% else %}#}
+{#<h4> סוג: חתול</h4>#}
+{#{% endif %}#}
 
-<p>{% if object.species == 'dog' %}
-<h5> סוג: כלב</h5>
+<p>{% if object.sex == 'M' %}</p>
+<h4> מין: זכר</h4>
 {% else %}
-<h5> סוג: חתול</h5></p>
+<h4> מין: נקבה</h4>
 {% endif %}
 
-<p>{% if object.sex == 'M' %}
-<h5> מין: זכר</h5>
-{% else %}
-<h5> מין: נקבה</h5></p>
-{% endif %}
-<a role="button" href=" " class="btn btn-secondary">אמצו אותי</a>
+ <input onclick="change()" type="button" value="רוצים לאמץ אותי?" id="myButton1">
+<script type="text/javascript">
+function change()
+{
+document.getElementById("myButton1").value="בואו לבקר אותי בעמותה שלנו ונחזור הביתה ביחד";
+}
+</script><br><br><br>
 
-</body>
 {% endblock content %}
