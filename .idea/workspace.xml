@@ -2,18 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d3f605eb-49a7-4797-8f65-1fca2f9fa66d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Donations/templates/Donations/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Donations/test_views.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Taskboard/froms.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Taskboard/templates/Taskbord/all_task.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Taskboard/templates/Taskbord/task_detail.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Taskboard/test_views.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Taskboard/urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/success_story/test_views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BaitHam/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/BaitHam/settings.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BaitHam/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/BaitHam/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Donations/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/Donations/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Donations/donates" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Donations/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/Donations/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Donations/templates/alldonates/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Donations/templates/donates/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Donations/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/Donations/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Donations/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/Donations/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,8 +21,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Python Script" />
         <option value="HTML File" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
@@ -97,7 +95,19 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="main" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>

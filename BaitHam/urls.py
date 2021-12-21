@@ -3,7 +3,7 @@ from django.conf.urls.static import static
 from django.contrib import admin
 from django.urls import path, include
 from adopter import views
-
+from django.conf.urls import url,include
 app_name = 'adopter'
 
 urlpatterns = [
@@ -16,6 +16,8 @@ urlpatterns = [
     path('Animal/',include('Animal.urls'), name='Animal'),
     path('volunteer/',include('volunteer.urls')),
     path('Donations/',include('Donations.urls'), name='Donations)'),
+    path('Taskboard/',include('Taskboard.urls'), name='Taskboard)'),
+
 
 ]
 
