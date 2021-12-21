@@ -36,22 +36,14 @@
         {% endif %}
           class="rounded" height=300 width=300 alt="{{ animal.name }}"><br>
     <h4>תיאור</h4>
-<b>{{object.description}}</b> <br>
+<b>{{object.description}}</b> <br><br>
 
-<b>{{object.breed}}</b> <br>
-
-
-{##}
-{#<p>{% if object.species == 'dog' %}</p>#}
-{#<h4> סוג: כלב</h4>#}
-{#{% else %}#}
-{#<h4> סוג: חתול</h4>#}
-{#{% endif %}#}
+<b>גזע: {{object.breed}}</b> <br><br>
 
 <p>{% if object.sex == 'M' %}</p>
-<h4> מין: זכר</h4>
+<b> מין: זכר</b><br><br>
 {% else %}
-<h4> מין: נקבה</h4>
+<b> מין: נקבה</b><br><br>
 {% endif %}
 
  <input onclick="change()" type="button" value="רוצים לאמץ אותי?" id="myButton1">

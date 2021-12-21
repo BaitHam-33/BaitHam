@@ -5,7 +5,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fef0a11c-f8ed-42a6-968f-06ca97908d2e" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/Taskboard/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/Taskboard/urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Donations/test/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Taskboard/templates/Taskboard/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Taskboard/templates/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Taskboard/tests/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Taskboard/tests/test_forms.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Taskboard/tests/test_models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/forum/templates/forum/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/Event/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/success_story/templates/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/success_story/templates/success_story/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/success_story/test/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Taskboard/test/test_forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/Donations/templates/Donations/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Taskboard/test/test_models.py" beforeDir="false" afterPath="$PROJECT_DIR$/Donations/templates/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Taskboard/test/test_urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/Taskboard/tests/test_urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Taskboard/test/test_views.py" beforeDir="false" afterPath="$PROJECT_DIR$/Taskboard/tests/test_views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,12 +56,21 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../לימודים/שנה ב/סמסטר א/יסודות הנדסת תוכנה/תרגיל/GitExe" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Taskboard/templates/Taskboard" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="run.code.analysis.last.selected.profile" value="aDefault" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.django.DjangoModulesConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\AFIK\Desktop\baitham_new\Taskboard\templates\Taskboard" />
+      <recent name="C:\Users\AFIK\Desktop\baitham_new\Taskboard\templates" />
+      <recent name="C:\Users\AFIK\Desktop\baitham_new\Taskboard\tests" />
+      <recent name="C:\Users\AFIK\Desktop\baitham_new\success_story\templates\success_story" />
+      <recent name="C:\Users\AFIK\Desktop\baitham_new\success_story\test" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration name="django" type="Python.DjangoServer" factoryName="Django server">
