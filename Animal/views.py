@@ -1,6 +1,7 @@
 from django.shortcuts import render, redirect
 from Animal.forms import Add_Animal_Form
 from .models import animal
+from .filters import animalFilter
 
 
 def all_animals(request):
@@ -8,7 +9,12 @@ def all_animals(request):
         animals = animal.objects.all()
     else:
         animals = animal.objects.filter(Adoption='Y')
-    return render(request, 'Animal/all_animals.html', {'animals': animals})
+
+    myfilter = animalFilter(request.GET, queryset=animals )
+    animals = myfilter.qs
+    context = {'animals': animals, 'myfilter': myfilter}
+
+    return render(request, 'Animal/all_animals.html', context)
 
 
 def add_Animal(request):
@@ -70,10 +76,10 @@ def deleteAnimal(requset, id):
     animal_obj = animal.objects.get(id=id)
     if requset.method == 'POST':
         if animal_obj.image and animal_obj.image != 'default.png':
-            print("jjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj")
             animal_obj.image.delete()
         animal_obj.delete()
         return redirect('Animal:all_animals')
 
     context = {'animal': animal_obj}
     return render(requset, 'Animal/DeleteAnimal.html', context)
+
