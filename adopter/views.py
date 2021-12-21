@@ -10,3 +10,6 @@ def home(request):
 
 def admin ():
     return HttpResponseRedirect(reverse('admin:index'))
+
+def contact_us(request):
+    return render(request, 'adopter/contact_us.html')

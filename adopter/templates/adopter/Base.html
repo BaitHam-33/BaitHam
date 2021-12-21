@@ -74,10 +74,14 @@
                 <li>
                 <a role="button" href="{% url 'Donations:new' %}" class="btn btn-info">תרומות</a>
                 </li> &#160
+
                 <li>
                     <a role="button" href="{% url 'home' %}" class="btn btn-info">דו"חות</a>
                 </li>
                 &#160
+                <li>
+                    <a role="button" href="{% url 'contact_us' %}" class="btn btn-info">צור קשר</a>
+                </li>&#160
                 {% if user.is_authenticated %}
 
                     <li>
