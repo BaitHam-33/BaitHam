@@ -3,7 +3,7 @@ from django.conf.urls.static import static
 from django.contrib import admin
 from django.urls import path, include
 from adopter import views
-from django.conf.urls import url,include
+
 app_name = 'adopter'
 
 urlpatterns = [
@@ -18,13 +18,10 @@ urlpatterns = [
     path('volunteer/',include('volunteer.urls')),
     path('Event/',include('Event.urls')),
     path('Donations/',include('Donations.urls'), name='Donations)'),
-<<<<<<< HEAD
     path('forum/', include('forum.urls'), name='forum'),
-=======
     path('Taskboard/',include('Taskboard.urls'), name='Taskboard)'),
 
 
->>>>>>> daniel_work
 ]
 
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
