@@ -1,17 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="d3f605eb-49a7-4797-8f65-1fca2f9fa66d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Donations/templates/Donations/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BaitHam/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/BaitHam/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BaitHam/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/BaitHam/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Donations/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/Donations/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Donations/donates" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Donations/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/Donations/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Donations/templates/alldonates/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Donations/templates/donates/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Donations/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/Donations/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Donations/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/Donations/views.py" afterDir="false" />
+    <list default="true" id="fef0a11c-f8ed-42a6-968f-06ca97908d2e" name="Changes" comment="add event detail html page - topaz">
+      <change afterPath="$PROJECT_DIR$/Event/tests/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Event/tests/test_forms.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Event/tests/test_urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Event/tests/test_views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Event/tests.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Event/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/Event/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/adopter/templates/adopter/Base.html" beforeDir="false" afterPath="$PROJECT_DIR$/adopter/templates/adopter/Base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/adopter/templates/adopter/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/adopter/templates/adopter/home.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -22,8 +24,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Python Script" />
         <option value="HTML File" />
+        <option value="Python Script" />
+        <option value="Python Unit Test" />
       </list>
     </option>
   </component>
@@ -48,6 +51,9 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../לימודים/שנה ב/סמסטר א/יסודות הנדסת תוכנה/תרגיל/GitExe" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="run.code.analysis.last.selected.profile" value="aDefault" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.django.DjangoModulesConfigurable" />
   </component>
@@ -79,12 +85,14 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="d3f605eb-49a7-4797-8f65-1fca2f9fa66d" name="Changes" comment="" />
+      <changelist id="fef0a11c-f8ed-42a6-968f-06ca97908d2e" name="Changes" comment="add event detail html page - topaz" />
       <created>1638198948336</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1638198948336</updated>
       <workItem from="1638198949741" duration="1545000" />
+      <workItem from="1639995991062" duration="2313000" />
+      <workItem from="1640030553991" duration="4751000" />
     </task>
     <servers />
   </component>
