@@ -10,6 +10,7 @@ urlpatterns = [
     path('admin/',admin.site.urls),
     path('', views.home, name='home'),
     path('admin_page/', views.admin, name='admin_page'),
+    path('reports',views.reports,name='reports'),
     path('Report/',include('Report.urls')),
     path('Article/',include('Article.urls')),
     path('success_story/',include('success_story.urls')),
@@ -17,6 +18,9 @@ urlpatterns = [
     path('volunteer/',include('volunteer.urls')),
     path('Event/',include('Event.urls')),
     path('Donations/',include('Donations.urls'), name='Donations)'),
+    path('forum/', include('forum.urls'), name='forum'),
+    path('Taskboard/',include('Taskboard.urls'), name='Taskboard)'),
+
 
 ]
 

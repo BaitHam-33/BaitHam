@@ -1,9 +1,11 @@
+
 {% load static %}
 
 <!doctype html>
 <html lang="he" dir="rtl">
 
 <head>
+
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -17,11 +19,11 @@
           integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
 
-    <link rel="stylesheet" href="{% static "adopter/custom.css" %}">
+    <link rel="stylesheet" href="{% static 'adopter/custom.css '%}">
 
     <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
 
-    <link rel="icon" type="image/png" href="{% static "adopter/Logo.jpeg" %}">
+    <link rel="icon" type="image/png" href="{% static 'adopter/Logo.jpeg' %}">
 
     <title>בית חם</title>
 </head>
@@ -40,7 +42,7 @@
             <span class="navbar-toggler-icon"></span>
         </button>
 
-        <div class="collapse navbar-collapse text-center" id="navbarNav">
+                <div class="collapse navbar-collapse text-center" id="navbarNav">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
                     <div class="dropdown">
@@ -55,11 +57,9 @@
                                 חתולים</a></li>
                         </ul>
                     </div>
+                <li> &#160
+                <a role="button" href="{% url 'forum:home' %}" class="btn btn-info">פורום</a>
                 </li> &#160
-                <li>
-                    <a role="button" href="{% url 'home' %}" class="btn btn-info">פורום</a>
-                </li>
-                &#160
                 <li>
                     <a role="button" href="{% url 'Event:all_events' %}" class="btn btn-info">אירועי עמותה</a>
                 </li>
@@ -76,15 +76,19 @@
                 <a role="button" href="{% url 'Donations:new' %}" class="btn btn-info">תרומות</a>
                 </li> &#160
                 <li>
-                    <a role="button" href="{% url 'home' %}" class="btn btn-info">דו"חות</a>
+                    <a role="button" href="{% url 'reports' %}" class="btn btn-info">דו"חות</a>
                 </li>
                 &#160
+
+
                 {% if user.is_authenticated %}
 
                     <li>
                         <a role="button" href="{% url 'Report:all_reports' %}" class="btn btn-danger">דיווחים</a>
                     </li>&#160
-
+  <li>
+                <a role="button" href="{% url 'Taskboard:all_task' %}" class="btn btn-info">מטלות</a>
+                </li> &#160
                     <li>
                         <form class="logout-link" action="{% url 'volunteer:logoutuser' %}" method="post">
                             {% csrf_token %}
