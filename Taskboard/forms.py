@@ -9,7 +9,3 @@ class TaskForm(ModelForm):
         model = list_task
         fields = ['date', 'name', 'text']
 
-class Add_Animal_Form(ModelForm):
-            class Meta:
-                model = task
-                fields = ['name', 'description']

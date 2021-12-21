@@ -1,6 +1,7 @@
 from django.shortcuts import render, redirect
-from .models import list_task
+from .models import list_task,task
 from .forms import TaskForm
+
 
 def all_task(request):
    tasks = list_task.objects.all()
@@ -9,6 +10,15 @@ def all_task(request):
 def task_detail(request, id=None):
     task_obj = None
     if id is not None:
-        task_obj = animal.objects.get(id=id)
+        task_obj = list_task.objects.get(id=id)
     context = {"object": task_obj}
     return render(request, 'Taskboard/task_detail.html', context=context)
+
+def createTask(request):
+    if request.method == 'GET':
+        return render(request, 'Taskboard/createTask.html', {'form':TaskForm()})
+    else:
+        form = TaskForm(request.POST)
+        new_task = form.save(commit=False)
+        new_task.save()
+        return redirect('Taskboard:all_task')

@@ -28,12 +28,14 @@
 
 <h3 class="text-center mb-5"> קיימות {{ list_task.count }} משימות לביצוע </h3>
 
-{% for i in tasks %}
+{% for task in tasks %}
 <div class="row justify-content-center my-3">
     <div class="col-md-10">
         <h5 class="text-muted">{{ list_task.date|date:'d M Y'|upper }}</h5>
-        <h2>{{ report.name }}</h2>
-        <p>{{ report.text|striptags}}</p>
+        <h2> <a href= "task_detail/{{task.id}}" >{{ task.name }}</a></h2>
+        <p>{{ task.text|striptags}}</p>
+
+
     </div>
 </div>
 {% endfor %}
