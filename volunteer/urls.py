@@ -7,4 +7,6 @@ urlpatterns = [
     #path('homeVolunteer',views.homeVolunteer,name='homeVolunteer'),
     path('login/', views.loginuser, name='loginuser'),
     path('logout/', views.logoutuser, name='logoutuser'),
+    path('update/',views.update,name='update'),
+
 ]

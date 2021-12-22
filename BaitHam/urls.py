@@ -18,7 +18,7 @@ urlpatterns = [
     path('volunteer/',include('volunteer.urls')),
     path('Event/',include('Event.urls')),
     path('Donations/',include('Donations.urls'), name='Donations)'),
-
+    path('forum/', include('forum.urls'), name='forum'),
 ]
 
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

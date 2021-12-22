@@ -28,8 +28,13 @@
     {% endif %}
 
 <h1>{{object.name}}</h1>
-<img src = {{object.image.url}} class="rounded" height=300 width=300> <br>
- <h5>תיאור</h5>
+ <img  src={% if object.image %}
+                {{ object.image.url }}
+        {% else %}
+                "media/default.png"
+        {% endif %}
+          class="rounded" height=300 width=300><br>
+    <h5>תיאור</h5>
 <b>{{object.description}}</b> <br> <br>
 <b>{{object.breed}}</b> <br>
 

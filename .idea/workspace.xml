@@ -4,13 +4,24 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
+<<<<<<< HEAD
     <list default="true" id="fef0a11c-f8ed-42a6-968f-06ca97908d2e" name="Changes" comment="add event detail html page - topaz">
-      <change afterPath="$PROJECT_DIR$/Report/tests/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Report/tests/test_forms.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Report/tests/test_urls.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Report/tests/test_views.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/volunteer/forms.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/volunteer/templates/volunteer/update.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Report/tests.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Report/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/Report/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/adopter/templates/adopter/Base.html" beforeDir="false" afterPath="$PROJECT_DIR$/adopter/templates/adopter/Base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/volunteer/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/volunteer/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/volunteer/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/volunteer/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/volunteer/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/volunteer/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/volunteer/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/volunteer/views.py" afterDir="false" />
+=======
+    <list default="true" id="d3f605eb-49a7-4797-8f65-1fca2f9fa66d" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BaitHam/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/BaitHam/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+>>>>>>> origin/avigail
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,9 +31,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="Python Script" />
         <option value="Python Unit Test" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -107,5 +118,15 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/pets/admin.py</url>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
