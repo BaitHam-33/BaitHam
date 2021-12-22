@@ -8,4 +8,4 @@ class Donations(models.Model):
     amount = models.CharField(max_length=100)
 
     def __str__(self):
-        return f"{self.name} - {self.amount}"
+        return f"{self.name} - {self.amount}₪"

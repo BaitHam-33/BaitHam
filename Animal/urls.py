@@ -1,6 +1,6 @@
 from django.urls import path
 
-from .views import all_animals, add_Animal, Animal_detail, editAnimal,deleteAnimal
+from .views import all_animals, add_Animal, Animal_detail, editAnimal, deleteAnimal
 
 app_name = 'Animal'
 
