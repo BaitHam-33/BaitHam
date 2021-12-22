@@ -1,7 +1,9 @@
+from django.contrib.auth.decorators import login_required
 from django.shortcuts import render, redirect
 from django.contrib.auth import login, logout, authenticate
 from django.contrib.auth.models import User
 from django.contrib.auth.forms import AuthenticationForm
+from .forms import AttendanceForm
 
 
 def logoutuser(request):
@@ -27,3 +29,14 @@ def loginuser(request):
         form = AuthenticationForm(request)
         context = {'form': form}
     return render(request, 'volunteer/loginuser.html', context)
+
+
+def update(request):
+    if request.method == 'GET':
+        return render(request,'volunteer/update.html',{'form':AttendanceForm()})
+    else:
+        form=AttendanceForm(request.POST)
+        new_attend=form.save(commit=False)
+        new_attend.user=request.user
+        new_attend.save()
+        return redirect('home')

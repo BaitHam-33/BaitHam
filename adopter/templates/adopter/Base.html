@@ -83,8 +83,9 @@
 
                 {% if user.is_authenticated %}
 
+
                     <li>
-                        <a role="button" href="{% url 'Report:all_reports' %}" class="btn btn-danger">דיווחים</a>
+                        <a role="button" href="{% url 'volunteer:update' %}" class="btn btn-info">דיווח נוכחות</a>
                     </li>&#160
   <li>
                 <a role="button" href="{% url 'Taskboard:all_task' %}" class="btn btn-info">מטלות</a>
@@ -95,6 +96,9 @@
                             <button type="submit" class="btn btn-dark">התנתק</button>
                         </form>
                     </li> &#160
+                    <li>
+                        <a role="button" href="{% url 'Report:all_reports' %}" class="btn btn-danger">דיווחים</a>
+                    </li>&#160
 
                 {% else %}
                     <li>
