@@ -5,21 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fef0a11c-f8ed-42a6-968f-06ca97908d2e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Donations/test/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Taskboard/templates/Taskboard/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Taskboard/templates/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Taskboard/tests/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Taskboard/tests/test_forms.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Taskboard/tests/test_models.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/forum/templates/forum/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/Event/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/success_story/templates/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/success_story/templates/success_story/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/success_story/test/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Taskboard/test/test_forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/Donations/templates/Donations/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Taskboard/test/test_models.py" beforeDir="false" afterPath="$PROJECT_DIR$/Donations/templates/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Taskboard/test/test_urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/Taskboard/tests/test_urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Taskboard/test/test_views.py" beforeDir="false" afterPath="$PROJECT_DIR$/Taskboard/tests/test_views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Supplier/migrations/0001_initial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Supplier/migrations/0002_rename_document_supplierregistration_quotation.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Supplier/migrations/0003_rename_quotation_supplierregistration_bid_proposal.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/adopter/templates/adopter/Base.html" beforeDir="false" afterPath="$PROJECT_DIR$/adopter/templates/adopter/Base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/adopter/templates/adopter/contact_us.html" beforeDir="false" afterPath="$PROJECT_DIR$/adopter/templates/adopter/contact_us.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -125,5 +116,6 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>
