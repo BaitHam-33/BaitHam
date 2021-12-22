@@ -77,11 +77,8 @@
 
                 <li>
                     <a role="button" href="{% url 'home' %}" class="btn btn-info">דו"חות</a>
-                </li>
-                &#160
-                <li>
-                    <a role="button" href="{% url 'contact_us' %}" class="btn btn-info">צור קשר</a>
                 </li>&#160
+
                 {% if user.is_authenticated %}
 
                     <li>
@@ -96,9 +93,14 @@
                     </li> &#160
 
                 {% else %}
+
+                <li>&#160
+                    <a role="button" href="{% url 'contact_us' %}" class="btn btn-info">צור קשר</a>
+                </li>&#160
                     <li>
                         <a role="button" href="{% url 'Report:createReport' %}" class="btn btn-danger">כפתור אדום</a>
                     <li>&#160
+
                     <li>
                         <a role="button" href="{% url 'volunteer:loginuser' %}" class="btn btn-dark">התחבר</a>
                     </li>&#160
