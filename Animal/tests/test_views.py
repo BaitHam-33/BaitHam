@@ -19,16 +19,19 @@ class TestViews(TestCase):
     def test_all_animals_GET(self):
         response = self.client.get(reverse('Animal:all_animals'))
         self.assertEqual(response.status_code, 200)
+        self.assertTemplateUsed(response, 'adopter/Base.html')
         self.assertTemplateUsed(response, 'Animal/all_animals.html')
 
     def test_Animal_detail_GET(self):
         response = self.client.get(reverse('Animal:animal_detail', args=[1]))
         self.assertEqual(response.status_code, 200)
+        self.assertTemplateUsed(response, 'adopter/Base.html')
         self.assertTemplateUsed(response, 'Animal/animal_detail.html')
 
     def test_add_Animal_GET(self):
         response = self.client.get(reverse('Animal:add_Animal'))
         self.assertEqual(response.status_code, 200)
+        self.assertTemplateUsed(response, 'adopter/Base.html')
         self.assertTemplateUsed(response, 'Animal/add_Animal.html')
 
     def test_add_Animal_POST_Valid(self):
@@ -60,6 +63,7 @@ class TestViews(TestCase):
     def test_edit_Animal_GET(self):
         response = self.client.get(reverse('Animal:editAnimal', args=[1]))
         self.assertEqual(response.status_code, 200)
+        self.assertTemplateUsed(response, 'adopter/Base.html')
         self.assertTemplateUsed(response, 'Animal/add_Animal.html')
 
     def test_edit_Animal_POST(self):
@@ -78,6 +82,7 @@ class TestViews(TestCase):
     def test_delete_Animal_GET(self):
         response = self.client.get(reverse('Animal:deleteAnimal', args=[1]))
         self.assertEqual(response.status_code, 200)
+        self.assertTemplateUsed(response, 'adopter/Base.html')
         self.assertTemplateUsed(response, 'Animal/DeleteAnimal.html')
 
     def test_delete_Animal_POST(self):
