@@ -4,15 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fef0a11c-f8ed-42a6-968f-06ca97908d2e" name="Changes" comment="">
+    <list default="true" id="fef0a11c-f8ed-42a6-968f-06ca97908d2e" name="Changes" comment="add event detail html page - topaz">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Supplier/migrations/0001_initial.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Supplier/migrations/0002_rename_document_supplierregistration_quotation.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Supplier/migrations/0003_rename_quotation_supplierregistration_bid_proposal.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/adopter/templates/adopter/Base.html" beforeDir="false" afterPath="$PROJECT_DIR$/adopter/templates/adopter/Base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/adopter/templates/adopter/contact_us.html" beforeDir="false" afterPath="$PROJECT_DIR$/adopter/templates/adopter/contact_us.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Report/tests.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -102,6 +96,13 @@
       <workItem from="1640030553991" duration="4751000" />
       <workItem from="1640120131953" duration="837000" />
     </task>
+    <task id="LOCAL‎00001" summary="add event detail html page - topaz">
+      <created>1640201411767</created>
+      <option name="number" value="LOCAL‎00001" />
+      <option name="presentableId" value="LOCAL‎00001" />
+      <updated>1640201411767</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -118,5 +119,9 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="add event detail html page - topaz" />
+    <option name="LAST_COMMIT_MESSAGE" value="add event detail html page - topaz" />
   </component>
 </project>
