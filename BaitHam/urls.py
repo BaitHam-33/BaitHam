@@ -22,7 +22,7 @@ urlpatterns = [
     path('forum/', include('forum.urls'), name='forum'),
     path('Taskboard/',include('Taskboard.urls'), name='Taskboard)'),
     path('Supplier/',include('Supplier.urls'),name='Supplier'),
-
+    path('Stock/',include('Stock.urls'),name='Stock')
 
 ]
 

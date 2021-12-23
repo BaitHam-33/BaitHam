@@ -21,56 +21,87 @@
             div {
                 text-align: center;
             }
+
         </style>
     </head>
     <body>
 
-<h1 class="font-weight-bold text-center"> הפקת דו"חות </h1>
-<br>
-<br>
-<br>
-
+    <br>
+    <br>
+    <br>
 <div>
+<br>
+    <h1 class="font-weight-bold text-center"> הפקת דו"חות </h1>
+<br>
+</div>
+    <div class="row">
+        <div class="col-md">
+                <table class="table table-sm">
+                    <tr>
+                        <th>לשימוש פרטי</th>
+                        <th>לשימוש עסקי\מנהלי</th>
+                    </tr>
+
+
+<tr>
+    <th>
+
+        <h4><b>דו"ח שעות התנדבות: </b></h4>
+<a  href="{% url 'volunteer:export_pdf' %}" class="btn btn-secondary">ייצא באמצעות PDF</a> &#160
+<a  href="{% url 'volunteer:export_excel' %}" class="btn btn-success" >ייצא באמצעות excel</a> &#160
+
+    <br>
+    <br>
+
 <h4><b>דו"ח פיננסי (הכנסות): </b></h4>
-<a  href="{% url 'Donations:export_pdf' %}" class="btn btn-secondary">ייצא באמצעות PDF</a> &#160
-<a  href="{% url 'Donations:export_excel' %}" class="btn btn-secondary" >ייצא באמצעות excel</a> &#160
+<a href="{% url 'Donations:export_pdf' %}" class="btn btn-secondary">ייצא באמצעות PDF</a> &#160
+<a href="{% url 'Donations:export_excel' %}" class="btn btn-success" >ייצא באמצעות excel</a> &#160
 
     <br>
     <br>
 
-<h4><b>דו"ח מלאי: </b></h4>
+    <h4><b>דו"ח מצב עמותה: </b></h4>
 <a  href="" class="btn btn-secondary">ייצא באמצעות PDF</a> &#160
-<a  href="" class="btn btn-secondary" >ייצא באמצעות excel</a> &#160
+<a  href="" class="btn btn-success" >ייצא באמצעות excel</a> &#160
+
+    <br>
+    <br>
+</th>
+
+<th>
+<h4><b>דו"ח מלאי: </b></h4>
+<a  href="{% url 'Stock:export_pdf' %}" class="btn btn-secondary">ייצא באמצעות PDF</a> &#160
+<a  href="{% url 'Stock:export_excel' %}" class="btn btn-success" >ייצא באמצעות excel</a> &#160
 
     <br>
     <br>
 
 <h4><b>דו"ח ספקים: </b></h4>
 <a  href="{% url 'Supplier:export_pdf' %}" class="btn btn-secondary">ייצא באמצעות PDF</a> &#160
-<a  href="{% url 'Supplier:export_excel' %}" class="btn btn-secondary" >ייצא באמצעות excel</a> &#160
+<a  href="{% url 'Supplier:export_excel' %}" class="btn btn-success" >ייצא באמצעות excel</a> &#160
 
     <br>
     <br>
 
-<h4><b>דו"ח מצב עמותה: </b></h4>
-<a  href="" class="btn btn-secondary">ייצא באמצעות PDF</a> &#160
-<a  href="" class="btn btn-secondary" >ייצא באמצעות excel</a> &#160
-
-    <br>
-    <br>
 
     <h4><b>דו"ח בקרת מטלות: </b></h4>
 <a  href="{% url 'Taskboard:export_pdf' %}" class="btn btn-secondary">ייצא באמצעות PDF</a> &#160
-<a  href="{% url 'Taskboard:export_excel' %}" class="btn btn-secondary" >ייצא באמצעות excel</a> &#160
+<a  href="{% url 'Taskboard:export_excel' %}" class="btn btn-success" >ייצא באמצעות excel</a> &#160
 
     <br>
     <br>
 
-    <h4><b>דו"ח שעות התנדבות: </b></h4>
-<a  href="{% url 'volunteer:export_pdf' %}" class="btn btn-secondary">ייצא באמצעות PDF</a> &#160
-<a  href="{% url 'volunteer:export_excel' %}" class="btn btn-secondary" >ייצא באמצעות excel</a> &#160
+
+        <h4><b>דו"ח פעילויות עמותה: </b></h4>
+<a  href="{% url 'Event:export_pdf' %}" class="btn btn-secondary">ייצא באמצעות PDF</a> &#160
+<a  href="{% url 'Event:export_excel' %}" class="btn btn-success" >ייצא באמצעות excel</a> &#160
 
     <br>
     <br>
-   </div>
+         </tr>
+</th>
+            </table>
+        </div>
+
+</div>
 {% endblock %}

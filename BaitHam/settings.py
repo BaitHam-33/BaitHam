@@ -50,6 +50,7 @@ INSTALLED_APPS = [
     'Taskboard',
     'Supplier',
     'forum',
+    'Stock'
 ]
 
 MIDDLEWARE = [

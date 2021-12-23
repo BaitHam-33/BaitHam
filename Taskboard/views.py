@@ -78,7 +78,7 @@ def export_excel(request):
 
     ws.write(0, 0, 'Weekly tasks report of the "Bait Ham" association:', font_style)
 
-    columns = ['Date', 'Task', 'Detail']
+    columns = ['Date', 'Task', 'Details']
     for col_num in range(len(columns)):
         ws.write(row_num, col_num, columns[col_num], font_style)
 
