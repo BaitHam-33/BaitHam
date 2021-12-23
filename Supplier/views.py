@@ -64,8 +64,6 @@ def export_excel(request):
 
     font_style = xlwt.XFStyle()
 
-    suppliers = SupplierRegistration.objects.all()
-
 
     for row in rows:
         row_num += 1
