@@ -17,3 +17,6 @@ def reports(request):
 
 def admin(request):
     return HttpResponseRedirect(reverse('admin:index'))
+
+def contact_us(request):
+    return render(request, 'adopter/contact_us.html')

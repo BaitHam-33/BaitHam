@@ -26,3 +26,5 @@ def deleteReport(request, report_id):
     Report = report.objects.get(pk=report_id)
     Report.delete()  # delete the report from the database
     return redirect('Report:all_reports')  # refers to the page of all reports
+
+

@@ -1,6 +1,15 @@
 from django.shortcuts import render, redirect
-from .models import list_task,task
+from .models import list_task
 from .forms import TaskForm
+from django.http import HttpResponse, FileResponse
+from reportlab.pdfbase import pdfmetrics
+from reportlab.pdfbase.ttfonts import TTFont
+from datetime import datetime
+from reportlab.pdfgen import canvas
+from reportlab.lib.units import inch
+from reportlab.lib.pagesizes import letter
+import io
+import xlwt
 
 
 def all_task(request):
@@ -22,3 +31,71 @@ def createTask(request):
         new_task = form.save(commit=False)
         new_task.save()
         return redirect('Taskboard:all_task')
+
+
+def export_pdf(request):
+    buf = io.BytesIO()
+    c = canvas.Canvas(buf, pagesize=letter, bottomup=0)
+    # creat a text object
+    textob = c.beginText()
+    textob.setTextOrigin(inch, inch)
+    pdfmetrics.registerFont(TTFont('David', 'David.ttf'))
+    textob.setFont("David", 14)
+
+    tasks = list_task.objects.all()  # designate the model
+    lines = []  # creat blank link
+
+    for task in tasks:
+        lines.append('Date: ' + str(task.date))
+        lines.append('Task: ' + task.name)
+        lines.append('Details: ' + task.text)
+        lines.append('_______________________________________')
+        lines.append('    ')
+
+
+
+    textob.textLine("Weekly tasks report of the 'Bait Ham' association:")
+    textob.textLine("    ")
+    for line in lines:
+        textob.textLine(line)
+
+    c.drawText(textob)
+    c.showPage()
+    c.save()
+    buf.seek(0)
+
+    return FileResponse(buf, as_attachment=True, filename='tasks.pdf')
+
+
+def export_excel(request):
+    response = HttpResponse(content_type='tasks/excel')
+    response['Content-Disposition'] = 'attachment; filename=tasks' + str(datetime.now()) + '.xls'
+    wb = xlwt.Workbook(encoding='utf-8')
+    ws = wb.add_sheet('tasks')  # give a name to the sheet
+    row_num = 2
+    font_style = xlwt.XFStyle()
+    font_style.font.bold = True
+
+    ws.write(0, 0, 'Weekly tasks report of the "Bait Ham" association:', font_style)
+
+    columns = ['Date', 'Task', 'Details']
+    for col_num in range(len(columns)):
+        ws.write(row_num, col_num, columns[col_num], font_style)
+
+    rows = list_task.objects.all().values_list('date', 'name', 'text')
+
+    font_style = xlwt.XFStyle()
+
+
+    for row in rows:
+        row_num += 1
+        for col_num in range(len(row)):
+            ws.write(row_num, col_num, str(row[col_num]), font_style)
+
+    font_style = xlwt.XFStyle()
+    font_style.font.bold = True
+
+
+    wb.save(response)
+
+    return response

@@ -48,9 +48,9 @@ INSTALLED_APPS = [
     'Event',
     'Donations',
     'Taskboard',
-
-
+    'Supplier',
     'forum',
+    'Stock'
 ]
 
 MIDDLEWARE = [

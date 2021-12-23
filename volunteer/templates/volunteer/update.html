@@ -17,13 +17,13 @@ div {text-align: center;}
 </head>
 <body>
 
-    <h1>דיווח על בע"ח נטושים</h1>
+    <h1>דיווח נוכחות</h1>
     <br>
     <form method="POST">
         {% csrf_token %}
     {{ form.as_p }}
 
-        <button type="submit">דווח</button>
+        <button type="submit">שמור דיווח</button>
     </form>
 
  {% endblock %}

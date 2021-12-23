@@ -58,20 +58,22 @@ def all_Donors(request):
 
 
 def export_pdf(request):
+    """Function for exporting a pdf document from the system"""
     buf = io.BytesIO()
-    c = canvas.Canvas(buf, pagesize=letter, bottomup=0)
-    # creat a text object
-    textob = c.beginText()
-    textob.setTextOrigin(inch, inch)
+    c = canvas.Canvas(buf, pagesize=letter, bottomup=0)  # creat a new page
+    textob = c.beginText()  # creat a text object
+    textob.setTextOrigin(inch, inch)  # set the sizes of the text
     pdfmetrics.registerFont(TTFont('Tahoma', 'Tahoma.ttf'))
-    textob.setFont("Tahoma", 14)
+    textob.setFont("Tahoma", 14)  # set the font of the text
 
     donations = Donations.objects.all()  # designate the model
-    lines = []  # creat blank link
-    sum = 0
+    lines = []  # creat a new list for the objects
+
+    sum = 0  # accumulation variable for calculating the total amount of donations
     for donation in donations:
         sum += int(donation.amount)
 
+    # print all data we need
     for donation in donations:
         lines.append('Donor name: ' + donation.name)
         lines.append('Donor ID: ' + donation.id_number)
@@ -81,58 +83,62 @@ def export_pdf(request):
         lines.append('    ')
 
     lines.append('Total:' + str(sum) + '₪')
-    # loop
-    textob.textLine("Revenue report of the 'Bait Ham' association:")
+
+    textob.textLine("Revenue report of the 'Bait Ham' association:")  # the title of the file
     textob.textLine("    ")
     for line in lines:
         textob.textLine(line)
 
     c.drawText(textob)
     c.showPage()
-    c.save()
+    c.save()  # save the file
     buf.seek(0)
 
     return FileResponse(buf, as_attachment=True, filename='donations.pdf')
 
 
 def export_excel(request):
+    """Function for exporting an excel document from the system"""
     response = HttpResponse(content_type='donations/excel')
     response['Content-Disposition'] = 'attachment; filename=donations' + str(datetime.now()) + '.xls'
     wb = xlwt.Workbook(encoding='utf-8')
     ws = wb.add_sheet('donations')  # give a name to the sheet
-    row_num = 2
-    font_style = xlwt.XFStyle()
+    row_num = 2  # initial row for objects
+    font_style = xlwt.XFStyle()  # set the font of the text
     font_style.font.bold = True
 
-    ws.write(0, 0, 'Revenue report of the "Bait Ham" association:', font_style)
+    ws.write(0, 0, 'Revenue report of the "Bait Ham" association:', font_style)  # the title of the file
 
-    columns = ['Name', 'ID Number', 'Amount']
+    columns = ['Name', 'ID Number', 'Amount']  # the columns in the table
     for col_num in range(len(columns)):
         ws.write(row_num, col_num, columns[col_num], font_style)
 
+    # save all the data we need from database
     rows = Donations.objects.all().values_list('name', 'id_number', 'amount')
 
     font_style = xlwt.XFStyle()
 
     donations = Donations.objects.all()
     sum = 0
+    # calculate the total amount from donations
     for donation in donations:
         sum += int(donation.amount)
 
     count = 0
+    # calculate the number of rows in the table for the objects
     for donation in donations:
         count += 1
 
     for row in rows:
         row_num += 1
         for col_num in range(len(row)):
-            ws.write(row_num, col_num, str(row[col_num]), font_style)
+            ws.write(row_num, col_num, str(row[col_num]), font_style)  # enter all the data to the table
 
     font_style = xlwt.XFStyle()
     font_style.font.bold = True
     ws.write(count + 3, 1, 'Total:', font_style)
-    ws.write(count + 3, 2, str(sum) + '₪', font_style)
+    ws.write(count + 3, 2, str(sum) + '₪', font_style)  # print the total amount
 
-    wb.save(response)
+    wb.save(response)  # save the file
 
     return response

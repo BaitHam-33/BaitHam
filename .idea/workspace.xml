@@ -6,19 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="fef0a11c-f8ed-42a6-968f-06ca97908d2e" name="Changes" comment="add event detail html page - topaz">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Animal/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/Animal/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Animal/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/Animal/forms.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Animal/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/Animal/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Animal/templates/Animal/DeleteAnimal.html" beforeDir="false" afterPath="$PROJECT_DIR$/Animal/templates/Animal/DeleteAnimal.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Animal/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/Animal/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Donations/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/Donations/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Donations/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/Donations/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Donations/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/Donations/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Event/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/Event/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Event/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/Event/forms.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Event/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/Event/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/forum/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/forum/models.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,9 +29,6 @@
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="MarkdownSettingsMigration">
-    <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="21b9W409P3fSnfY4A0jUiGm5s2X" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -110,9 +95,14 @@
       <workItem from="1639995991062" duration="2313000" />
       <workItem from="1640030553991" duration="4751000" />
       <workItem from="1640120131953" duration="837000" />
-      <workItem from="1640175068277" duration="618000" />
-      <workItem from="1640196681925" duration="11454000" />
     </task>
+    <task id="LOCAL‎00001" summary="add event detail html page - topaz">
+      <created>1640201411767</created>
+      <option name="number" value="LOCAL‎00001" />
+      <option name="presentableId" value="LOCAL‎00001" />
+      <updated>1640201411767</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -128,5 +118,10 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="add event detail html page - topaz" />
+    <option name="LAST_COMMIT_MESSAGE" value="add event detail html page - topaz" />
   </component>
 </project>
