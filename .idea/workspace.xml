@@ -4,22 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fef0a11c-f8ed-42a6-968f-06ca97908d2e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Donations/test/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Taskboard/templates/Taskboard/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Taskboard/templates/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Taskboard/tests/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Taskboard/tests/test_forms.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Taskboard/tests/test_models.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/forum/templates/forum/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/Event/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/success_story/templates/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/success_story/templates/success_story/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/success_story/test/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Taskboard/test/test_forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/Donations/templates/Donations/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Taskboard/test/test_models.py" beforeDir="false" afterPath="$PROJECT_DIR$/Donations/templates/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Taskboard/test/test_urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/Taskboard/tests/test_urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Taskboard/test/test_views.py" beforeDir="false" afterPath="$PROJECT_DIR$/Taskboard/tests/test_views.py" afterDir="false" />
+    <list default="true" id="fef0a11c-f8ed-42a6-968f-06ca97908d2e" name="Changes" comment="add event detail html page - topaz">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Animal/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/Animal/forms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Animal/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/Animal/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Animal/templates/Animal/add_Animal.html" beforeDir="false" afterPath="$PROJECT_DIR$/Animal/templates/Animal/add_Animal.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -43,6 +32,9 @@
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="21b9W409P3fSnfY4A0jUiGm5s2X" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -109,6 +101,8 @@
       <workItem from="1639995991062" duration="2313000" />
       <workItem from="1640030553991" duration="4751000" />
       <workItem from="1640120131953" duration="837000" />
+      <workItem from="1640175068277" duration="618000" />
+      <workItem from="1640196681925" duration="5304000" />
     </task>
     <servers />
   </component>
