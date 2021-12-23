@@ -20,15 +20,15 @@ def donates_form(request):
         if form.is_valid():
             name = form.cleaned_data.get("name")
             id_number = form.cleaned_data.get("id_number")
-            credit_number = form.cleaned_data.get("credit_number")
-            cvc = form.cleaned_data.get("cvc")
+            #credit_number = form.cleaned_data.get("credit_number")
+            #cvc = form.cleaned_data.get("cvc")
             amount = form.cleaned_data.get("amount")
 
             obj = Donations.objects.create(
                 name=name,
                 id_number=id_number,
-                credit_number=credit_number,
-                cvc=cvc,
+                #credit_number=credit_number,
+                #cvc=cvc,
                 amount=amount,
             )
             obj.save()
