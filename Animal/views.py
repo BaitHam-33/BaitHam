@@ -13,7 +13,9 @@ def all_animals(request):
     myfilter = animalFilter(request.GET, queryset=animals)
     animals = myfilter.qs
     context = {'animals': animals, 'myfilter': myfilter}
-
+    stat = Stats.objects.last()
+    stat.current = animal.objects.count()
+    stat.save()
     return render(request, 'Animal/all_animals.html', context)
 
 
@@ -46,7 +48,6 @@ def add_Animal(request):
             obj.save()
             stat = Stats.objects.last()
             stat.created += 1
-            stat.current = animal.objects.count()
             stat.save()
         else:
             print(form.errors)  # in case of errors in validation
@@ -82,9 +83,9 @@ def deleteAnimal(requset, id):
         if animal_obj.image and animal_obj.image != 'default.png':
             animal_obj.image.delete()
         animal_obj.delete()
+
         stat = Stats.objects.last()
         stat.deleted += 1
-        stat.current = animal.objects.count()
         stat.save()
         return redirect('Animal:all_animals')
 

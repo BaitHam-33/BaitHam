@@ -18,6 +18,7 @@ class forum(models.Model):
 class Discussion(models.Model):
     forum = models.ForeignKey(forum, blank=True, on_delete=models.CASCADE, default=None, verbose_name="הנושא עליו תרצה להגיב")
     discuss = models.TextField(max_length=1000, default=None, verbose_name="התגובה")
+    name = models.CharField(max_length=100, default=None, verbose_name="שם")
 
     def __str__(self):
         return str(self.forum)
