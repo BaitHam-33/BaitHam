@@ -49,7 +49,7 @@
                         <button class="btn btn-info" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
                                 aria-expanded="false">
                             מאמרים
-                        </button>
+                        </button>&#160
                         <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
                             <li><a class="dropdown-item" href={% url 'Article:article_dog' %}>מאמרים על
                                 כלבים</a></li>
@@ -57,7 +57,7 @@
                                 חתולים</a></li>
                         </ul>
                     </div>
-                <li> &#160
+                <li>
                 <a role="button" href="{% url 'forum:home' %}" class="btn btn-info">פורום</a>
                 </li> &#160
                 <li>
@@ -75,6 +75,7 @@
                 <li>
                 <a role="button" href="{% url 'Donations:new' %}" class="btn btn-info">תרומות</a>
                 </li> &#160
+
                 <li>
                     <a role="button" href="{% url 'reports' %}" class="btn btn-info">דו"חות</a>
                 </li>
@@ -87,7 +88,9 @@
                     <li>
                         <a role="button" href="{% url 'volunteer:update' %}" class="btn btn-info">דיווח נוכחות</a>
                     </li>&#160
-
+  <li>
+                <a role="button" href="{% url 'Taskboard:all_task' %}" class="btn btn-info">מטלות</a>
+                </li> &#160
                     <li>
                         <form class="logout-link" action="{% url 'volunteer:logoutuser' %}" method="post">
                             {% csrf_token %}
@@ -99,9 +102,14 @@
                     </li>&#160
 
                 {% else %}
+
+                <li>
+                    <a role="button" href="{% url 'contact_us' %}" class="btn btn-info">צור קשר</a>
+                </li>&#160
                     <li>
                         <a role="button" href="{% url 'Report:createReport' %}" class="btn btn-danger">כפתור אדום</a>
                     <li>&#160
+
                     <li>
                         <a role="button" href="{% url 'volunteer:loginuser' %}" class="btn btn-dark">התחבר</a>
                     </li>&#160
@@ -109,7 +117,7 @@
 
                 {% if user.is_authenticated and user.is_superuser %}
                     <li>&#160
-                        <a role="button" href="{% url 'admin' %}" class="btn btn-light">ניהול</a>
+                        <a role="button" href="{% url 'admin_page' %}" class="btn btn-light">ניהול</a>
                     </li>&#160
                 {% endif %}
 

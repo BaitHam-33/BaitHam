@@ -4,24 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-<<<<<<< HEAD
-    <list default="true" id="fef0a11c-f8ed-42a6-968f-06ca97908d2e" name="Changes" comment="add event detail html page - topaz">
-      <change afterPath="$PROJECT_DIR$/volunteer/forms.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/volunteer/templates/volunteer/update.html" afterDir="false" />
+    <list default="true" id="fef0a11c-f8ed-42a6-968f-06ca97908d2e" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Report/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/Report/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Supplier/migrations/0001_initial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Supplier/migrations/0002_rename_document_supplierregistration_quotation.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Supplier/migrations/0003_rename_quotation_supplierregistration_bid_proposal.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/adopter/templates/adopter/Base.html" beforeDir="false" afterPath="$PROJECT_DIR$/adopter/templates/adopter/Base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/adopter/templates/adopter/contact_us.html" beforeDir="false" afterPath="$PROJECT_DIR$/adopter/templates/adopter/contact_us.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/volunteer/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/volunteer/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/volunteer/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/volunteer/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/volunteer/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/volunteer/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/volunteer/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/volunteer/views.py" afterDir="false" />
-=======
-    <list default="true" id="d3f605eb-49a7-4797-8f65-1fca2f9fa66d" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BaitHam/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/BaitHam/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
->>>>>>> origin/avigail
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,9 +21,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="HTML File" />
         <option value="Python Script" />
         <option value="Python Unit Test" />
-        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -57,12 +47,21 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../לימודים/שנה ב/סמסטר א/יסודות הנדסת תוכנה/תרגיל/GitExe" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Taskboard/templates/Taskboard" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="run.code.analysis.last.selected.profile" value="aDefault" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.django.DjangoModulesConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\AFIK\Desktop\baitham_new\Taskboard\templates\Taskboard" />
+      <recent name="C:\Users\AFIK\Desktop\baitham_new\Taskboard\templates" />
+      <recent name="C:\Users\AFIK\Desktop\baitham_new\Taskboard\tests" />
+      <recent name="C:\Users\AFIK\Desktop\baitham_new\success_story\templates\success_story" />
+      <recent name="C:\Users\AFIK\Desktop\baitham_new\success_story\test" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration name="django" type="Python.DjangoServer" factoryName="Django server">
@@ -118,15 +117,5 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/pets/admin.py</url>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>
