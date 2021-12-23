@@ -9,3 +9,6 @@ class attendance(models.Model):
     date = models.DateField(default=date.today)
     entrance_time = models.TimeField()
     leaving_time = models.TimeField(default=datetime.datetime.now)
+
+    def __str__(self):
+        return self.user.first_name
