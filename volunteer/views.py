@@ -42,28 +42,30 @@ def loginuser(request):
 
 
 def update(request):
+    """A function that allows the volunteer to report volunteer hours"""
     if request.method == 'GET':
-        return render(request, 'volunteer/update.html', {'form': AttendanceForm()})
+        return render(request, 'volunteer/update.html', {'form': AttendanceForm()})  # refer to attendance report page
     else:
-        form = AttendanceForm(request.POST)
+        form = AttendanceForm(request.POST)  # creat a form from attendance model
         new_attend = form.save(commit=False)
-        new_attend.user = request.user
-        new_attend.save()
-        return redirect('home')
+        new_attend.user = request.user  # link between the report and the logged in user
+        new_attend.save()  # save the report in the database
+        return redirect('home')  # refer to the homepage
 
 
 def export_pdf(request):
+    """Function for exporting a pdf document from the system"""
     buf = io.BytesIO()
-    c = canvas.Canvas(buf, pagesize=letter, bottomup=0)
-    # creat a text object
-    textob = c.beginText()
-    textob.setTextOrigin(inch, inch)
+    c = canvas.Canvas(buf, pagesize=letter, bottomup=0)  # creat a new page
+    textob = c.beginText()  # creat a text object
+    textob.setTextOrigin(inch, inch)  # set the sizes of the text
     pdfmetrics.registerFont(TTFont('David', 'David.ttf'))
-    textob.setFont("David", 14)
+    textob.setFont("David", 14)  # set the font of the text
 
     Attendance = attendance.objects.filter(user=request.user)  # designate the model
 
-    lines = []  # creat blank link
+    lines = []  # creat a new list for the objects
+    #print all data we need
     for obj in Attendance:
         lines.append('Date: ' + str(obj.date))
         lines.append('Entrance time: ' + str(obj.entrance_time))
@@ -71,35 +73,37 @@ def export_pdf(request):
         lines.append('_____________________________________________')
         lines.append('    ')
 
-    name = request.user.first_name
-    textob.textLine("Attendance report for last month, for the volunteer: " + name)
+    name = request.user.first_name  # save the name of the logged in user
+    textob.textLine("Attendance report for last month, for the volunteer: " + name)  # the title of the file
     textob.textLine("    ")
     for line in lines:
         textob.textLine(line)
 
     c.drawText(textob)
     c.showPage()
-    c.save()
+    c.save()  # save the file
     buf.seek(0)
 
     return FileResponse(buf, as_attachment=True, filename='attendance.pdf')
 
 
 def export_excel(request):
+    """Function for exporting an excel document from the system"""
     response = HttpResponse(content_type='attendance/excel')
     response['Content-Disposition'] = 'attachment; filename=attendance' + str(datetime.now()) + '.xls'
     wb = xlwt.Workbook(encoding='utf-8')
     ws = wb.add_sheet('attendance')  # give a name to the sheet
-    row_num = 2
-    font_style = xlwt.XFStyle()
+    row_num = 2  # initial row for objects
+    font_style = xlwt.XFStyle()  # set the font of the text
     font_style.font.bold = True
     name = request.user.first_name
-    ws.write(0, 0, 'Attendance report for last month, for the volunteer: '+name, font_style)
+    ws.write(0, 0, 'Attendance report for last month, for the volunteer: ' + name, font_style)  # the title of the file
 
-    columns = ['Date', 'Entrance time', 'Leaving time']
+    columns = ['Date', 'Entrance time', 'Leaving time']  # the columns in the table
     for col_num in range(len(columns)):
         ws.write(row_num, col_num, columns[col_num], font_style)
 
+    # save all the data we need from database
     rows = attendance.objects.filter(user=request.user).values_list('date', 'entrance_time', 'leaving_time')
 
     font_style = xlwt.XFStyle()
@@ -107,11 +111,11 @@ def export_excel(request):
     for row in rows:
         row_num += 1
         for col_num in range(len(row)):
-            ws.write(row_num, col_num, str(row[col_num]), font_style)
+            ws.write(row_num, col_num, str(row[col_num]), font_style)  # enter all the data to the table
 
     font_style = xlwt.XFStyle()
     font_style.font.bold = True
 
-    wb.save(response)
+    wb.save(response)  # save the file
 
     return response

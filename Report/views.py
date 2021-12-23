@@ -27,12 +27,4 @@ def deleteReport(request, report_id):
     Report.delete()  # delete the report from the database
     return redirect('Report:all_reports')  # refers to the page of all reports
 
-def update(request):
-    if request.method == 'GET':
-        return render(request,'volunteer/update.html',{'form':AttendanceForm()})
-    else:
-        form=AuthenticationForm(request.POST)
-        new_attend=form.save(commit=False)
-        new_attend.user=request.user
-        new_attend.save()
-        return redirect('Taskboard:all_task')
+

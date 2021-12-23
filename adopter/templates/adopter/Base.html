@@ -5,6 +5,12 @@
 <html lang="he" dir="rtl">
 
 <head>
+       <!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+</html>
 
     <!-- Required meta tags -->
     <meta charset="utf-8">
@@ -26,7 +32,7 @@
     <link rel="icon" type="image/png" href="{% static 'adopter/Logo.jpeg' %}">
 
     <title>בית חם</title>
-</head>
+
 
 <body>
 
@@ -36,12 +42,12 @@
             <img src="{% static 'adopter/Logo.jpeg' %}" width="70" height="40" class="d-inline-block align-top"
                  alt="BaitHam's Logo">
             <span></span>
+
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-
                 <div class="collapse navbar-collapse text-center" id="navbarNav">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
@@ -58,8 +64,9 @@
                         </ul>
                     </div>
                 <li>
-                <a role="button" href="{% url 'forum:home' %}" class="btn btn-info">פורום</a>
+                <a role="button" href="{% url 'forum:home' %}" class="btn btn-info" >פורום</a>
                 </li> &#160
+
                 <li>
                     <a role="button" href="{% url 'Event:all_events' %}" class="btn btn-info">אירועי עמותה</a>
                 </li>
@@ -77,7 +84,7 @@
                 </li> &#160
 
                 <li>
-                    <a role="button" href="{% url 'reports' %}" class="btn btn-info">דו"חות</a>
+                    <a role="button" href="{% url 'reports' %}" class="btn btn-info">הפקת דו"חות</a>
                 </li>
                 &#160
 
@@ -89,17 +96,17 @@
                         <a role="button" href="{% url 'volunteer:update' %}" class="btn btn-info">דיווח נוכחות</a>
                     </li>&#160
   <li>
-                <a role="button" href="{% url 'Taskboard:all_task' %}" class="btn btn-info">מטלות</a>
+                <a role="button" href="{% url 'Taskboard:all_task' %}" class="btn btn-info">לוח מטלות</a>
                 </li> &#160
+                    <li>
+                        <a role="button" href="{% url 'Report:all_reports' %}" class="btn btn-danger">דיווחים</a>
+                    </li>&#160
                     <li>
                         <form class="logout-link" action="{% url 'volunteer:logoutuser' %}" method="post">
                             {% csrf_token %}
                             <button type="submit" class="btn btn-dark">התנתק</button>
                         </form>
                     </li> &#160
-                    <li>
-                        <a role="button" href="{% url 'Report:all_reports' %}" class="btn btn-danger">דיווחים</a>
-                    </li>&#160
 
                 {% else %}
 
