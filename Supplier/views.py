@@ -15,8 +15,8 @@ def export_pdf(request):
     # creat a text object
     textob = c.beginText()
     textob.setTextOrigin(inch, inch)
-    pdfmetrics.registerFont(TTFont('Tahoma', 'Tahoma.ttf'))
-    textob.setFont("Tahoma", 14)
+    pdfmetrics.registerFont(TTFont('David', 'David.ttf'))
+    textob.setFont("David", 14)
 
     suppliers = SupplierRegistration.objects.all()  # designate the model
     lines = []  # creat blank link
@@ -27,7 +27,7 @@ def export_pdf(request):
         lines.append('Address: ' + supplier.address)
         lines.append('Phone number: ' + supplier.phone_number)
         lines.append('    ')
-        lines.append('----------------------------------')
+        lines.append('_______________________________________')
         lines.append('    ')
 
 
