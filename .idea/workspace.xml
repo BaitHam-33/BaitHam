@@ -6,12 +6,13 @@
   <component name="ChangeListManager">
     <list default="true" id="fef0a11c-f8ed-42a6-968f-06ca97908d2e" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Supplier/migrations/0001_initial.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Supplier/migrations/0002_rename_document_supplierregistration_quotation.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Supplier/migrations/0003_rename_quotation_supplierregistration_bid_proposal.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/adopter/templates/adopter/Base.html" beforeDir="false" afterPath="$PROJECT_DIR$/adopter/templates/adopter/Base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/adopter/templates/adopter/contact_us.html" beforeDir="false" afterPath="$PROJECT_DIR$/adopter/templates/adopter/contact_us.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BaitHam/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/BaitHam/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BaitHam/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/BaitHam/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Supplier/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/Supplier/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/adopter/templates/adopter/reports.html" beforeDir="false" afterPath="$PROJECT_DIR$/adopter/templates/adopter/reports.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/volunteer/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/volunteer/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/volunteer/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/volunteer/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
