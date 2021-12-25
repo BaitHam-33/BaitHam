@@ -12,9 +12,9 @@ def validate_month(value):
         )
 
 class animal(models.Model):
-    Sex_Choice = [('M', 'Male'), ('F', 'Female')]
-    Species_choice = [('dog', 'Dog'), ('cat', 'Cat')]
-    Adoption_ready = [('N', 'No'), ('Y', 'Yes')]
+    Sex_Choice = [('M', 'זכר'), ('F', 'נקבה')]
+    Species_choice = [('dog', 'כלב'), ('cat', 'חתול')]
+    Adoption_ready = [('N', 'לא'), ('Y', 'כן')]
     name = models.CharField(max_length=100, verbose_name="שם")  # Name of the Pet
     submitter = models.CharField(max_length=100, null=True, verbose_name="הוכנס על ידי")  # Name of Submitter
     species = models.CharField(max_length=30, choices=Species_choice, blank=False,

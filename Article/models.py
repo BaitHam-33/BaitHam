@@ -1,13 +1,13 @@
 from django.db import models
 
 
-class articlesModel(models.Model):
+class articles(models.Model):
     name = models.CharField(max_length=200)
     text = models.TextField(max_length=5000)
-    type = models.CharField(max_length=10, choices=[("cat", "Cat"), ("dog", "Dog")])
+    type = models.CharField(max_length=10, choices=[("cat", "חתול"), ("dog", "כלב")], verbose_name="סוג")
     genre = models.CharField(max_length=200,
-                             choices=[("adoption", "Adoption"), ("info", "Info"), ("training", "Training"),
-                                      ("other", "Other")], default="other")
+                             choices=[("adoption", "אימוץ"), ( "info","מידע"), ("training", "אילוף"),
+                                      ("other", "אחר")], default="other",verbose_name="ז'אנר")
     link = models.CharField(max_length=2000, default=None)
 
     def __str__(self):

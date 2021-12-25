@@ -5,41 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fef0a11c-f8ed-42a6-968f-06ca97908d2e" name="Changes" comment="add event detail html page - topaz">
-      <change afterPath="$PROJECT_DIR$/success_story/tests/test_urls.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/success_story/tests/test_views.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Article/filters.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Animal/tests/test_forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/Animal/tests/test_forms.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Animal/tests/test_views.py" beforeDir="false" afterPath="$PROJECT_DIR$/Animal/tests/test_views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Animal/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/Animal/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Animal/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/Animal/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Article/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/Article/admin.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Article/migrations/0001_initial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Article/migrations/0002_alter_articlesmodel_link.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Article/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/Article/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Article/templates/Article/articles.html" beforeDir="false" afterPath="$PROJECT_DIR$/Article/templates/Article/articles.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Article/templates/Article/articles_cat.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Article/templates/Article/articles_dog.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Article/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/Article/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Article/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/Article/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Donations/templates/Donations/Thankyou.html" beforeDir="false" afterPath="$PROJECT_DIR$/Donations/templates/Donations/Thankyou.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Donations/test/test_forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/Donations/test/test_forms.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Donations/test/test_models.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Donations/test/test_urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/Donations/test/test_urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Donations/test/test_views.py" beforeDir="false" afterPath="$PROJECT_DIR$/Donations/test/test_views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Donations/tests.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Donations/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/Donations/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Donations/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/Donations/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Event/tests/test_views.py" beforeDir="false" afterPath="$PROJECT_DIR$/Event/tests/test_views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Report/tests/test_views.py" beforeDir="false" afterPath="$PROJECT_DIR$/Report/tests/test_views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Taskboard/tests.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Taskboard/tests/test_urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/Taskboard/tests/test_urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Taskboard/tests/test_views.py" beforeDir="false" afterPath="$PROJECT_DIR$/Taskboard/tests/test_views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/adopter/templates/adopter/Base.html" beforeDir="false" afterPath="$PROJECT_DIR$/adopter/templates/adopter/Base.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/success_story/test/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/success_story/tests/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/success_story/test/test_forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/success_story/tests/test_forms.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/success_story/test/test_models.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/success_story/test/test_urls.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/success_story/test/test_views.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/success_story/tests.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,7 +62,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/Taskboard/templates/Taskboard" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Article" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
@@ -96,11 +71,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\AFIK\Desktop\baitham_new\Article" />
       <recent name="C:\Users\AFIK\Desktop\baitham_new\Taskboard\templates\Taskboard" />
       <recent name="C:\Users\AFIK\Desktop\baitham_new\Taskboard\templates" />
       <recent name="C:\Users\AFIK\Desktop\baitham_new\Taskboard\tests" />
       <recent name="C:\Users\AFIK\Desktop\baitham_new\success_story\templates\success_story" />
-      <recent name="C:\Users\AFIK\Desktop\baitham_new\success_story\test" />
     </key>
   </component>
   <component name="RunManager">
@@ -141,6 +116,7 @@
       <workItem from="1640030553991" duration="4751000" />
       <workItem from="1640120131953" duration="837000" />
       <workItem from="1640348033697" duration="2768000" />
+      <workItem from="1640391041529" duration="1105000" />
     </task>
     <task id="LOCAL‎00001" summary="add event detail html page - topaz">
       <created>1640201411767</created>
