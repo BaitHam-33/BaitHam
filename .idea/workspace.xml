@@ -5,10 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fef0a11c-f8ed-42a6-968f-06ca97908d2e" name="Changes" comment="add event detail html page - topaz">
+      <change afterPath="$PROJECT_DIR$/Article/filters.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/volunteer/tests/test_forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/volunteer/tests/test_forms.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/volunteer/tests/test_urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/volunteer/tests/test_urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/volunteer/tests/test_views.py" beforeDir="false" afterPath="$PROJECT_DIR$/volunteer/tests/test_views.py" afterDir="false" />
+
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,18 +18,30 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
-        <option value="Python Unit Test" />
         <option value="Python Script" />
+        <option value="Python Unit Test" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="main" />
+        <entry key="$PROJECT_DIR$" value="afik" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RESET_MODE" value="HARD" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="21b9W409P3fSnfY4A0jUiGm5s2X" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -44,7 +55,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/Taskboard/templates/Taskboard" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Article" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
@@ -53,11 +64,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\AFIK\Desktop\baitham_new\Article" />
       <recent name="C:\Users\AFIK\Desktop\baitham_new\Taskboard\templates\Taskboard" />
       <recent name="C:\Users\AFIK\Desktop\baitham_new\Taskboard\templates" />
       <recent name="C:\Users\AFIK\Desktop\baitham_new\Taskboard\tests" />
       <recent name="C:\Users\AFIK\Desktop\baitham_new\success_story\templates\success_story" />
-      <recent name="C:\Users\AFIK\Desktop\baitham_new\success_story\test" />
     </key>
   </component>
   <component name="RunManager">
@@ -97,6 +108,8 @@
       <workItem from="1639995991062" duration="2313000" />
       <workItem from="1640030553991" duration="4751000" />
       <workItem from="1640120131953" duration="837000" />
+      <workItem from="1640348033697" duration="2768000" />
+      <workItem from="1640391041529" duration="1105000" />
     </task>
     <task id="LOCAL‎00001" summary="add event detail html page - topaz">
       <created>1640201411767</created>
@@ -120,7 +133,6 @@
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="add event detail html page - topaz" />

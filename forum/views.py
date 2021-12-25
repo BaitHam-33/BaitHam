@@ -45,7 +45,7 @@ def addInDiscussion(request):
         form = CreateInDiscussion(request.POST)
         if form.is_valid():
             form.save()
-            return redirect('adopter:home')
+            return redirect('forum:home')
     context = {'form': form}
     return render(request, 'forum/addInDiscussion.html', context)
 

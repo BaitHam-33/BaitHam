@@ -20,15 +20,11 @@ def donates_form(request):
         if form.is_valid():
             name = form.cleaned_data.get("name")
             id_number = form.cleaned_data.get("id_number")
-            credit_number = form.cleaned_data.get("credit_number")
-            cvc = form.cleaned_data.get("cvc")
             amount = form.cleaned_data.get("amount")
 
             obj = Donations.objects.create(
                 name=name,
                 id_number=id_number,
-                credit_number=credit_number,
-                cvc=cvc,
                 amount=amount,
             )
             obj.save()
@@ -39,22 +35,6 @@ def donates_form(request):
 
 def Thankyou(request):
     return render(request, 'Donations/Thankyou.html', {})
-
-
-def submit(request):
-    name = request.POST['name']
-    credit = request.POST['credit']
-    donates = Donations(name=name, credit=credit)
-    donates.save()
-    Donors = Donations.objects.all()
-    return render(request, 'Donations/index.html', {'Donors': Donors})
-
-
-def all_Donors(request):
-    Donors = Donations.objects.all()
-    if not Donors:
-        Donors = {}
-    return render(request, 'Donations/index.html', {'Donors': Donors})
 
 
 def export_pdf(request):

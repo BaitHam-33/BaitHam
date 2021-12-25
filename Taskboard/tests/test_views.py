@@ -1,24 +1,23 @@
-
-from django.test import TestCase,Client
-from django.urls import revers
-from Taskboard.models import Project,Category,Expense
-import json
+from django.test import TestCase, Client
+from django.urls import reverse
+from Taskboard.models import list_task
 
 
 class TestViews(TestCase):
     def setup(self):
-        self.client=Client()
-        self.all_task_url= revers('all_task')
-        self.task_detail_url=revers('detail_url')
-
-
+        self.client = Client()
 
     def test_all_task_GET(self):
-        response=self.client.get(self.all_task_url)
-        self.assertEquals(response.status_cod,200)
-        self.assertTemplatUsed(response,'Taskboard/all_task.html')
+        response = self.client.get(reverse('Taskboard:all_task'))
+        self.assertEquals(response.status_code, 200)
+        self.assertTemplateUsed(response, 'Taskboard/all_task.html')
 
     def test_task_detail_GET(self):
-        response = self.client.get(self.task_detail_url)
-        self.assertEquals(response.status_cod, 200)
-        self.assertTemplatUsed(response, 'Taskboard/task_detail.html')task_detail
+        obj = list_task.objects.create(
+                                       date='2021-11-10',
+                                       name='name'
+                                       )
+        response = self.client.get(reverse('Taskboard:task_detail', args=[obj.pk]))
+        self.assertEquals(response.status_code, 200)
+        self.assertTemplateUsed(response, 'Taskboard/task_detail.html')
+        self.assertTemplateUsed(response, 'adopter/Base.html')

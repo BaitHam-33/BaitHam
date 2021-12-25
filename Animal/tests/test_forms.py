@@ -19,4 +19,4 @@ class TestForms(unittest.TestCase):
     def test_Add_Animal_Form_no_Data(self):
         form = Add_Animal_Form(data={})
         self.assertFalse(form.is_valid())  # form is not valid so false expected
-        self.assertEqual(len(form.errors), 5)  # form has 4 required fields
+        self.assertEqual(len(form.errors), 4)  # form has 4 required fields
