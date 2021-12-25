@@ -8,3 +8,4 @@ class StockForm(ModelForm):
     class Meta:
         model = stock
         fields = ['amount']
+

@@ -5,23 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fef0a11c-f8ed-42a6-968f-06ca97908d2e" name="Changes" comment="add event detail html page - topaz">
-      <change afterPath="$PROJECT_DIR$/Stock/forms.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Stock/templates/Stock/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Stock/templates/Stock/updateStock.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Stock/templates/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Stock/filters.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Stock/templates/Stock/selectStock.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/volunteer/templates/volunteer/updateAttend.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Report/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/Report/forms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Donations/templates/Donations/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Donations/templates/Donations/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Stock/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/Stock/forms.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Stock/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/Stock/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Stock/templates/Stock/updateStock.html" beforeDir="false" afterPath="$PROJECT_DIR$/Stock/templates/Stock/updateStock.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Stock/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/Stock/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Stock/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/Stock/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Taskboard/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/Taskboard/forms.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Taskboard/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/Taskboard/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Taskboard/templates/Taskboard/all_task.html" beforeDir="false" afterPath="$PROJECT_DIR$/Taskboard/templates/Taskboard/all_task.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Taskboard/templates/Taskboard/task_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/Taskboard/templates/Taskboard/task_detail.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Taskboard/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/Taskboard/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Taskboard/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/Taskboard/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Taskboard/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/Taskboard/admin.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/adopter/templates/adopter/Base.html" beforeDir="false" afterPath="$PROJECT_DIR$/adopter/templates/adopter/Base.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/volunteer/templates/volunteer/update.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/volunteer/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/volunteer/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,9 +29,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="Python Unit Test" />
         <option value="Python Script" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -57,7 +55,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/Taskboard/templates/Taskboard" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Stock" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
@@ -66,11 +64,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\topaz\Desktop\baitham_new\Stock" />
       <recent name="C:\Users\AFIK\Desktop\baitham_new\Taskboard\templates\Taskboard" />
       <recent name="C:\Users\AFIK\Desktop\baitham_new\Taskboard\templates" />
       <recent name="C:\Users\AFIK\Desktop\baitham_new\Taskboard\tests" />
       <recent name="C:\Users\AFIK\Desktop\baitham_new\success_story\templates\success_story" />
-      <recent name="C:\Users\AFIK\Desktop\baitham_new\success_story\test" />
     </key>
   </component>
   <component name="RunManager">

@@ -29,18 +29,17 @@
     <h1>עדכון מלאי עמותה</h1>
     <br>
 
+    {% for msg in messages %}
+    {{ msg }}
+    {% endfor %}
 
     <form method="POST" action="">
         {% csrf_token %}
-        <b> עדכן  פריט: </b>
+        <b>בחר פריט:</b>
         <br>
-        {{ form.as_p }}
-        <button class='btn btn-outline-dark' type="submit">עדכן</button>
+        {{ myfilter.form }}
+        <button class='btn btn-outline-dark' type="submit">בחר</button>
     </form>
-
     <br>
-
-
-
 
 {% endblock %}

@@ -17,6 +17,12 @@ div {text-align: center;}
 </head>
 <body>
 
+{% for msg in messages %}
+{{msg}}
+{% endfor %}
+
+<br>
+<br>
     <h1>דיווח נוכחות</h1>
     <br>
     <form method="POST">

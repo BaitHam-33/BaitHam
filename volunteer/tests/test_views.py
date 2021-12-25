@@ -5,7 +5,7 @@ from volunteer.views import *
 
 class BaseTest(TestCase):
     def setUp(self):
-        self.login_url = reverse('loginuser')
+        self.login_url = reverse('volunteer:loginuser')
         self.user = {
             'username': 'username',
             'password': 'password' }

@@ -10,12 +10,40 @@ from reportlab.lib.units import inch
 from reportlab.lib.pagesizes import letter
 import io
 import xlwt
+from .filters import stockFilter
+from django.contrib import messages
 
 
-def updateStock(request):
+def selectStock(request):
     """the function update an item in the stock according to the request of the user and save it in the database"""
-    items = stock.objects.all()
-    return render(request, 'Stock/updateStock.html', {'items': items})
+    if request.method == 'GET':
+        Stock = stock.objects.all()
+        myfilter = stockFilter(request.GET, queryset=Stock)
+        Stock = myfilter.qs
+        context = {'Stock': Stock, 'myfilter': myfilter}
+        return render(request, 'Stock/selectStock.html', context)
+    if request.method == 'POST':
+        Stock = stock.objects.get(item=request.POST['item'])
+
+        return redirect("Stock:updateStock", Stock.id)
+
+    return render(request, 'Stock/selectStock.html')
+
+
+def updateStock(request, id=None):
+    if not id == None:
+        Stock = stock.objects.get(id=id)
+        form = StockForm(instance=Stock)
+        if request.method == 'POST':
+            form = StockForm(request.POST, instance=Stock)
+            if form.is_valid():
+                form.save()
+                messages.success(request,'פריט עודכן בהצלחה!')
+                return redirect('Stock:selectStock')
+        context = {"form": form, "Stock": Stock}
+        return render(request, 'Stock/updateStock.html', context=context)
+    return redirect('home')
+
 
 def export_pdf(request):
     """Function for exporting a pdf document from the system"""

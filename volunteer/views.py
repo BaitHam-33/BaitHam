@@ -1,4 +1,5 @@
 from django.contrib.auth.decorators import login_required
+from django.contrib import messages
 from django.shortcuts import render, redirect
 from django.contrib.auth import login, logout, authenticate
 from django.contrib.auth.models import User
@@ -44,13 +45,14 @@ def loginuser(request):
 def update(request):
     """A function that allows the volunteer to report volunteer hours"""
     if request.method == 'GET':
-        return render(request, 'volunteer/update.html', {'form': AttendanceForm()})  # refer to attendance report page
+        return render(request, 'volunteer/updateAttend.html', {'form': AttendanceForm()})  # refer to attendance report page
     else:
         form = AttendanceForm(request.POST)  # creat a form from attendance model
         new_attend = form.save(commit=False)
         new_attend.user = request.user  # link between the report and the logged in user
         new_attend.save()  # save the report in the database
-        return redirect('home')  # refer to the homepage
+        messages.success(request, 'דיווח התווסף בהצלחה!')
+        return redirect('volunteer:update')  # refer to the homepage
 
 
 def export_pdf(request):
@@ -65,7 +67,7 @@ def export_pdf(request):
     Attendance = attendance.objects.filter(user=request.user)  # designate the model
 
     lines = []  # creat a new list for the objects
-    #print all data we need
+    # print all data we need
     for obj in Attendance:
         lines.append('Date: ' + str(obj.date))
         lines.append('Entrance time: ' + str(obj.entrance_time))
