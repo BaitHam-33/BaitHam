@@ -1,4 +1,9 @@
 from django.contrib import admin
-from .models import articles
+from .models import articlesModel
 
-admin.site.register(articles)
+
+class articlesAdmin(admin.ModelAdmin):
+    list_display = ['name', 'type', 'genre']
+
+
+admin.site.register(articlesModel, articlesAdmin)

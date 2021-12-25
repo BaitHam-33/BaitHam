@@ -35,7 +35,7 @@ class TestViews(TestCase):
                                                                    'image': 'photo.png'})
 
         self.assertEqual(response.status_code, 302)  # means redirection works
-        self.assertEqual(event.objects.count(), event_count)  # all fields are in place
+        self.assertEqual(event.objects.count(), event_count+1)  # all fields are in place
 
     def test_create_event_POST_Not_Valid(self):
         response = self.client.post(reverse('Event:createEvent'),
@@ -57,4 +57,4 @@ class TestViews(TestCase):
                                                                             'text': 'welcome to my event',
                                                                             'image': 'photo.png'})
         self.assertEqual(response.status_code, 302)
-        self.assertEqual(event.objects.count(), event_count)
+        self.assertEqual(event.objects.count(), event_count-1)
