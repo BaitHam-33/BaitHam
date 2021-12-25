@@ -5,21 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fef0a11c-f8ed-42a6-968f-06ca97908d2e" name="Changes" comment="add event detail html page - topaz">
-      <change afterPath="$PROJECT_DIR$/Stock/filters.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Stock/templates/Stock/selectStock.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/volunteer/templates/volunteer/updateAttend.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Donations/templates/Donations/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Donations/templates/Donations/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Stock/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/Stock/forms.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Stock/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/Stock/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Stock/templates/Stock/updateStock.html" beforeDir="false" afterPath="$PROJECT_DIR$/Stock/templates/Stock/updateStock.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Stock/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/Stock/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Stock/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/Stock/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Taskboard/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/Taskboard/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/adopter/templates/adopter/Base.html" beforeDir="false" afterPath="$PROJECT_DIR$/adopter/templates/adopter/Base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Taskboard/migrations/0001_initial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Taskboard/migrations/0002_remove_list_task_user.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Taskboard/migrations/0003_list_task_user.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Taskboard/migrations/0004_alter_list_task_user.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Taskboard/migrations/0005_alter_list_task_user.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Taskboard/migrations/0006_list_task_status.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Taskboard/migrations/0007_delete_task.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Taskboard/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/Taskboard/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/volunteer/templates/volunteer/update.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/volunteer/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/volunteer/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,7 +33,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="main" />
+        <entry key="$PROJECT_DIR$" value="topaz" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -69,6 +64,9 @@
       <recent name="C:\Users\AFIK\Desktop\baitham_new\Taskboard\templates" />
       <recent name="C:\Users\AFIK\Desktop\baitham_new\Taskboard\tests" />
       <recent name="C:\Users\AFIK\Desktop\baitham_new\success_story\templates\success_story" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\AFIK\Desktop" />
     </key>
   </component>
   <component name="RunManager">
@@ -131,7 +129,6 @@
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="add event detail html page - topaz" />
