@@ -13,8 +13,9 @@ import xlwt
 
 
 def all_task(request):
-   tasks = list_task.objects.all()
-   return render(request, 'Taskboard/all_task.html', {'tasks': tasks})
+    tasks = list_task.objects.all()
+    return render(request, 'Taskboard/all_task.html', {'tasks': tasks})
+
 
 def task_detail(request, id=None):
     task_obj = None
@@ -23,15 +24,24 @@ def task_detail(request, id=None):
     context = {"object": task_obj}
     return render(request, 'Taskboard/task_detail.html', context=context)
 
+
 def createTask(request):
     if request.method == 'GET':
-        return render(request, 'Taskboard/createTask.html', {'form':TaskForm()})
+        return render(request, 'Taskboard/createTask.html', {'form': TaskForm()})
     else:
         form = TaskForm(request.POST)
         new_task = form.save(commit=False)
         new_task.save()
         return redirect('Taskboard:all_task')
 
+
+def assignTask(request, id):
+    list_task.objects.filter(id=id).update(user=request.user)
+    return redirect('Taskboard:all_task')
+
+def doneTask(request,id):
+    list_task.objects.filter(id=id).update(status=True)
+    return redirect('Taskboard:all_task')
 
 def export_pdf(request):
     buf = io.BytesIO()
@@ -51,8 +61,6 @@ def export_pdf(request):
         lines.append('Details: ' + task.text)
         lines.append('_______________________________________')
         lines.append('    ')
-
-
 
     textob.textLine("Weekly tasks report of the 'Bait Ham' association:")
     textob.textLine("    ")
@@ -86,7 +94,6 @@ def export_excel(request):
 
     font_style = xlwt.XFStyle()
 
-
     for row in rows:
         row_num += 1
         for col_num in range(len(row)):
@@ -94,7 +101,6 @@ def export_excel(request):
 
     font_style = xlwt.XFStyle()
     font_style.font.bold = True
-
 
     wb.save(response)
 

@@ -19,15 +19,32 @@
 
     </style>
     <meta charset="UTF-8">
-    <title>{{object.name}}</title>
+
 </head>
 <body>
+<br>
+<br>
+<a role="button" href="{% url 'Taskboard:assignTask' object.id %}" class="btn btn-secondary"> עליי! </a>
+<br>
+<br>
+
 <h1>{{object.name}}</h1>
- <h5>תיאור</h5>
-<b>{{object.text}}</b> <br><br>
+<br>
+ <h5> תיאור המטלה:</h5>
+<b>{{object.text}}</b>
+<br>
+<br>
+<b>משויכת ל:</b>
+<b>{{ object.user.first_name }}</b>
+<br>
+<br>
 
+<br>
+<br>
+<a role="button" href="{% url 'Taskboard:doneTask' object.id %}" class="btn btn-warning"> מטלה בוצעה? לחץ כאן! </a>
 
-<a role="button" href=" " class="btn btn-secondary">עליי!</a>
+<a role="button" href="{% url 'Taskboard:all_task' %}" class="btn btn-dark"> לכל המטלות </a>
+
 
 </body>
 {% endblock content %}

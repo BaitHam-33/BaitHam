@@ -7,5 +7,5 @@ urlpatterns = [
 
     path('export_pdf', views.export_pdf, name="export_pdf"),
     path('export_excel', views.export_excel, name="export_excel"),
-
+    path('updateStock/',views.updateStock,name='updateStock'),
 ]

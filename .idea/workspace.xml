@@ -5,10 +5,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fef0a11c-f8ed-42a6-968f-06ca97908d2e" name="Changes" comment="add event detail html page - topaz">
+      <change afterPath="$PROJECT_DIR$/Stock/forms.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Stock/templates/Stock/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Stock/templates/Stock/updateStock.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Stock/templates/__init__.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Animal/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/Animal/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Animal/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/Animal/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/adopter/templates/adopter/reports.html" beforeDir="false" afterPath="$PROJECT_DIR$/adopter/templates/adopter/reports.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Report/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/Report/forms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Stock/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/Stock/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Stock/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/Stock/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Stock/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/Stock/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Taskboard/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/Taskboard/forms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Taskboard/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/Taskboard/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Taskboard/templates/Taskboard/all_task.html" beforeDir="false" afterPath="$PROJECT_DIR$/Taskboard/templates/Taskboard/all_task.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Taskboard/templates/Taskboard/task_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/Taskboard/templates/Taskboard/task_detail.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Taskboard/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/Taskboard/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Taskboard/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/Taskboard/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/adopter/templates/adopter/Base.html" beforeDir="false" afterPath="$PROJECT_DIR$/adopter/templates/adopter/Base.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -20,8 +32,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
-        <option value="Python Script" />
         <option value="Python Unit Test" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>

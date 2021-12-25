@@ -1,7 +1,9 @@
 from django.http import HttpResponse, FileResponse
+from django.shortcuts import render, redirect
 from reportlab.pdfbase import pdfmetrics
 from reportlab.pdfbase.ttfonts import TTFont
 from .models import stock
+from .forms import StockForm
 from datetime import datetime
 from reportlab.pdfgen import canvas
 from reportlab.lib.units import inch
@@ -9,6 +11,11 @@ from reportlab.lib.pagesizes import letter
 import io
 import xlwt
 
+
+def updateStock(request):
+    """the function update an item in the stock according to the request of the user and save it in the database"""
+    items = stock.objects.all()
+    return render(request, 'Stock/updateStock.html', {'items': items})
 
 def export_pdf(request):
     """Function for exporting a pdf document from the system"""
@@ -23,7 +30,6 @@ def export_pdf(request):
     lines = []  # creat a new list for the objects
     # print all data we need
     for st in stocks:
-
         lines.append('Item: ' + str(st.item)[::-1])
         lines.append('Amount: ' + str(st.amount))
         lines.append('_______________________________________')
