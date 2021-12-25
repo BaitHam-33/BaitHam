@@ -45,13 +45,6 @@
 {% else %}
 <b> מין: נקבה</b><br><br>
 {% endif %}
-
- <input onclick="change()" type="button" value="רוצים לאמץ אותי?" id="myButton1">
-<script type="text/javascript">
-function change()
-{
-document.getElementById("myButton1").value="בואו לבקר אותי בעמותה שלנו ונחזור הביתה ביחד";
-}
-</script><br><br><br>
+<a role="button" href="{% url 'contact_us' %}" class="btn btn-primary">אמצו אותי</a>
 
 {% endblock content %}

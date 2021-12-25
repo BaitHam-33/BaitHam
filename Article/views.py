@@ -1,10 +1,11 @@
 from django.shortcuts import render
+from .models import articles
+from .filters import articleFilter
 
-def articles_dog(request):
-    return render(request, 'Article/articles_dog.html')
 
-def articles_cat(request):
-    return render(request, 'Article/articles_cat.html')
-
-def articles(request):
-    return render(request, 'Article/articles.html')
+def all_articles(request):
+    article = articles.objects.all()
+    myfilter = articleFilter(request.GET, queryset=article)
+    article = myfilter.qs
+    context = {'article': article, 'myfilter': myfilter}
+    return render(request, 'Article/articles.html', context)

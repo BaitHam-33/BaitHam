@@ -29,7 +29,7 @@ class TestViews(TestCase):
                                                                    'text': 'help the dog!'})
 
         self.assertEqual(response.status_code, 302)  # means redirection works
-        self.assertEqual(report.objects.count(), report_count)  # all fields are in place
+        self.assertEqual(report.objects.count(), report_count+1)  # all fields are in place
 
     def test_create_report_POST_Not_Valid(self):
         response = self.client.post(reverse('Report:createReport'),
@@ -49,4 +49,4 @@ class TestViews(TestCase):
                                                                              'date': '2021-11-24',
                                                                              'text': 'help the dog!'})
         self.assertEqual(response.status_code, 302)
-        self.assertEqual(report.objects.count(), report_count)
+        self.assertEqual(report.objects.count(), report_count-1)
