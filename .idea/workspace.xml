@@ -6,22 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="fef0a11c-f8ed-42a6-968f-06ca97908d2e" name="Changes" comment="add event detail html page - topaz">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BaitHam/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/BaitHam/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Donations/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/Donations/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Event/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/Event/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Report/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/Report/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Report/templates/Report/all_reports.html" beforeDir="false" afterPath="$PROJECT_DIR$/Report/templates/Report/all_reports.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Report/templates/Report/createReport.html" beforeDir="false" afterPath="$PROJECT_DIR$/Report/templates/Report/createReport.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Report/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/Report/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Stock/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/Stock/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Supplier/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/Supplier/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/adopter/templates/adopter/Base.html" beforeDir="false" afterPath="$PROJECT_DIR$/adopter/templates/adopter/Base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/adopter/templates/adopter/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/adopter/templates/adopter/home.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/adopter/templates/adopter/reports.html" beforeDir="false" afterPath="$PROJECT_DIR$/adopter/templates/adopter/reports.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/volunteer/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/volunteer/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/volunteer/templates/volunteer/update.html" beforeDir="false" afterPath="$PROJECT_DIR$/volunteer/templates/volunteer/update.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/volunteer/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/volunteer/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/volunteer/tests/test_forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/volunteer/tests/test_forms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/volunteer/tests/test_urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/volunteer/tests/test_urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/volunteer/tests/test_views.py" beforeDir="false" afterPath="$PROJECT_DIR$/volunteer/tests/test_views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
