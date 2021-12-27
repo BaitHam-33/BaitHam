@@ -5,21 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fef0a11c-f8ed-42a6-968f-06ca97908d2e" name="Changes" comment="add event detail html page - topaz">
-      <change afterPath="$PROJECT_DIR$/Stock/filters.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Stock/templates/Stock/selectStock.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/volunteer/templates/volunteer/updateAttend.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Donations/templates/Donations/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Donations/templates/Donations/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Stock/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/Stock/forms.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Stock/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/Stock/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Stock/templates/Stock/updateStock.html" beforeDir="false" afterPath="$PROJECT_DIR$/Stock/templates/Stock/updateStock.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Stock/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/Stock/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Stock/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/Stock/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Taskboard/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/Taskboard/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/adopter/templates/adopter/Base.html" beforeDir="false" afterPath="$PROJECT_DIR$/adopter/templates/adopter/Base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/volunteer/templates/volunteer/update.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/volunteer/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/volunteer/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Article/migrations/0001_initial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Article/migrations/0002_alter_articles_genre_alter_articles_type.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Article/migrations/0002_auto_20211227_2317.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Article/migrations/0003_alter_articles_genre.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Article/migrations/0004_alter_articles_genre_alter_articles_type.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,7 +29,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="main" />
+        <entry key="$PROJECT_DIR$" value="avigail" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -136,5 +127,15 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="add event detail html page - topaz" />
     <option name="LAST_COMMIT_MESSAGE" value="add event detail html page - topaz" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/pets/admin.py</url>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
