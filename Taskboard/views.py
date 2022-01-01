@@ -39,9 +39,11 @@ def assignTask(request, id):
     list_task.objects.filter(id=id).update(user=request.user)
     return redirect('Taskboard:all_task')
 
-def doneTask(request,id):
+
+def doneTask(request, id):
     list_task.objects.filter(id=id).update(status=True)
     return redirect('Taskboard:all_task')
+
 
 def export_pdf(request):
     buf = io.BytesIO()
@@ -57,8 +59,13 @@ def export_pdf(request):
 
     for task in tasks:
         lines.append('Date: ' + str(task.date))
-        lines.append('Task: ' + task.name)
-        lines.append('Details: ' + task.text)
+        lines.append('Task: ' + task.name[::-1])
+        lines.append('Details: ' + task.text[::-1])
+        lines.append('Associated to: ' + str(task.user))
+        if task.status:
+            lines.append('Status: ' + 'המטלה בוצעה'[::-1])
+        else:
+            lines.append('Status: ' + "המטלה טרם בוצעה"[::-1])
         lines.append('_______________________________________')
         lines.append('    ')
 
@@ -86,11 +93,11 @@ def export_excel(request):
 
     ws.write(0, 0, 'Weekly tasks report of the "Bait Ham" association:', font_style)
 
-    columns = ['Date', 'Task', 'Details']
+    columns = ['Date', 'Task', 'Details', 'Done?']
     for col_num in range(len(columns)):
         ws.write(row_num, col_num, columns[col_num], font_style)
 
-    rows = list_task.objects.all().values_list('date', 'name', 'text')
+    rows = list_task.objects.all().values_list('date', 'name', 'text', 'status')
 
     font_style = xlwt.XFStyle()
 

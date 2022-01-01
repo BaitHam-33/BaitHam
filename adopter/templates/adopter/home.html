@@ -44,12 +44,9 @@
               color: black;
               text-shadow: 2px 2px 4px #000000;
             }
-
     </style>
-
-
 </head>
-<body>
+
 
 {% for animal in animals %}
     <div class="col-lg-4 col-md-6">
@@ -62,11 +59,35 @@
                          class="rounded" height=300 width=300></a>
         <b><p>{{ animal.description }}</p></b>
 
-        <a role="button" href="{% url 'Animal:animal_detail' animal.id %}" class="btn btn-secondary">לפרטים מלאים עליי</a>
+        <a role="button" href="{% url 'Animal:animal_detail' animal.id %}" class="btn btn-dark">לפרטים מלאים עליי</a>
         <br>
         <br>
 
     </div>
 {% endfor %}
+            <a role="button" href="{% url 'Animal:all_animals' %}" class="btn btn-light">למאגר האימוץ המלא</a>
+<br>
+<br>
+<br>
+    <mark><h3> אירועים קרובים:</h3></mark>
 
+{% for event in events %}
+        <div class="col-lg-4 col-md-6">
+<div class="row justify-content-center my-3">
+    <div class="col-md-10">
+         <h5><b>{{ event.name }}</b></h5>
+        <h4 class="text-muted">{{ event.date|date:'D M,Y'|upper }}</h4>
+        <p>{{ event.text|truncatechars:100}}</p>
+        <a href="/Event/event_detail/{{event.id}} "><img  src={% if event.image %}{{ event.image.url }}{% endif %}
+          class="rounded" height=300 width=400></a>
+        <br>
+    </div>
+</div>
+        </div>
+    {% endfor %}
+            <a role="button" href="{% url 'Event:all_events' %}" class="btn btn-light">לכל האירועים</a>
+
+    <br>
+    <br>
+    <br>
 {% endblock %}

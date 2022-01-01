@@ -5,7 +5,7 @@
 <head>
 <style>
 h1 {text-align: center;}
-p {text-align: right;}
+p {text-align: center;}
 div {text-align: -webkit-center;}
 
 </style>
@@ -13,12 +13,12 @@ div {text-align: -webkit-center;}
 
 <body>
 <div>
-    <h1>Add Animal</h1>
+    <h1>הוספת בעל חיים למאגר</h1>
     <br>
     <form action="" class="form-horizontal form_middle" enctype='multipart/form-data' method="POST">
         {% csrf_token %}
         {{ form.as_p }}
-        <button type="submit">Submit</button>
+        <button type="submit">הוסף</button>
     </form>
 </div>
  {% endblock %}

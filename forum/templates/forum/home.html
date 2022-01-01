@@ -12,19 +12,26 @@
         }
     </style>
 
+<center>
 
+{% if user.is_authenticated %}
+    <b>מחובר בתור {{user.username}}</b>
+    {% endif %}
+
+<br>
     <br>
     <h1><b>תגובות: {{ count }} </b></h1> <br>
 
     {% if user.is_authenticated and not user.is_superuser %}
-            <a role="button" href="{% url 'forum:addInDiscussion' %} " class="btn btn-info">רוצה להגיב?</a>
+            <a role="button" href="{% url 'forum:addInDiscussion' %} " class="btn btn-dark">רוצה להגיב?</a>
         {% elif user.is_superuser %}
-            <a role="button" href="{% url 'forum:addInForum' %} " class="btn btn-info">התחל דיון חדש</a>
-            <a role="button" href="{% url 'forum:addInDiscussion' %} " class="btn btn-info">רוצה להגיב?</a>
+            <a role="button" href="{% url 'forum:addInForum' %} " class="btn btn-dark">התחל דיון חדש</a>
+            <a role="button" href="{% url 'forum:addInDiscussion' %} " class="btn btn-dark">רוצה להגיב?</a>
         {% else %}
-            <a role="button" href="{% url 'forum:addInForum' %} " class="btn btn-info">התחל דיון חדש</a>
+            <a role="button" href="{% url 'forum:addInForum' %} " class="btn btn-dark">התחל דיון חדש</a>
 
     {% endif %}
+</center>
     <div class="card-columns" style="padding: 10px; margin: 20px;"></div>
     <br>
 
