@@ -15,10 +15,16 @@ p {text-align: center;}
 div {text-align: center;}
 </style>
 </head>
+
+    {% if user.is_authenticated %}
+    <b>מחובר בתור {{user.username}}</b>
+    {% endif %}
+    <br>
+    <br>
 <body>
 
 {% for msg in messages %}
-{{msg}}
+<b>{{msg}}</b>
 {% endfor %}
 
 <br>
@@ -29,7 +35,7 @@ div {text-align: center;}
         {% csrf_token %}
     {{ form.as_p }}
 
-        <button type="submit">שמור דיווח</button>
+        <button type="submit" class="btn btn-secondary">שמור דיווח</button>
     </form>
 
  {% endblock %}

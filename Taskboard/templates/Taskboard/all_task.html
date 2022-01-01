@@ -22,8 +22,11 @@
             }
         </style>
     </head>
+{% if user.is_authenticated %}
+    <b>מחובר בתור {{user.username}}</b>
+    {% endif %}
+    <br>
 
-<br>
 <br>
 
 <h1 class="font-weight-bold text-center"> לוח מטלות שבועי </h1>

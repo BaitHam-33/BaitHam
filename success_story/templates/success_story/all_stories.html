@@ -10,23 +10,30 @@
             }
         </style>
 
-
+{% if user.is_authenticated %}
+    <b>מחובר בתור {{user.username}}</b>
+    {% endif %}
+    <br>
+    <br>
     <body>
     <body class="title">
-    <h1>סיפורי הצלחה</h1>
+    <h1 style="color:#5c4c86;"><ins>סיפורי הצלחה:</ins></h1>
     <div class="list-group">
         {% for story in stories %}
 
             <div class="row justify-content-center my-3">
                 <div class="col-md-10">
-                    <h5 class="text-muted">{{ story.date|date:'d M Y'|upper }}</h5>
-                    <h4>{{ story.name }}</h4>
-                    <p>{{ story.text|striptags }}</p>
+                    <h5 class="text-muted">{{ story.date|date:'d/m/Y'|upper }}</h5>
+                   <h4><b>{{ story.name }}</b></h4>
+                    <br>
+                    <b>{{ story.text }}</b>
                 </div>
             </div>
         {% endfor %}
 
-        <a role="button" href="{% url 'success_story:create_story' %}" class="btn btn-danger">שתף בסיפור שלך</a>
+    <br>
+    <br>
+        <a role="button" href="{% url 'success_story:create_story' %}" class="btn btn-dark">שתף בסיפור שלך</a>
     </div>
 
 

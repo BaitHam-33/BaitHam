@@ -24,14 +24,18 @@
 </head>
 <body>
 <div>
-<h1>{{object.name}}</h1>
+
+<h1><b>{{object.name}}</b></h1>
 <img src = {{object.image.url}} class="rounded" height=300 width=400>
     <br>
     <br>
 
-<b> בתאריך {{object.date | date:'D M,Y'}}</b>
-    <h2>פרטי האירוע:</h2>
-<b>{{object.text}}</b> <br>
+<h5><b> בתאריך {{object.date | date:'d/m/Y'}}</b></h5>
+    <br>
+    <ins><h4>פרטי האירוע:</h4></ins>
+    <br>
+<b>{{object.text | linebreaks}}</b>
+    <br>
 </div>
 <br>
 <br>

@@ -82,11 +82,12 @@
                 &#160
 
 
-                {% if user.is_authenticated %}
+                {% if user.is_authenticated and not user.is_superuser %}
                     <li>
                         <a role="button" href="{% url 'volunteer:update' %}" class="btn btn-info">דיווח נוכחות</a>
                     </li>&#160
-
+                    {% endif %}
+                {% if user.is_authenticated %}
                     <li>
                         <a role="button" href="{% url 'Taskboard:all_task' %}" class="btn btn-info">לוח מטלות</a>
                     </li> &#160
@@ -121,8 +122,7 @@
                 {% endif %}
 
                 {% if user.is_authenticated and user.is_superuser %}
-                    <li>&#160
-                        <a role="button" href="{% url 'admin_page' %}" class="btn btn-light">ניהול</a>
+                        <a role="button" href="{% url 'admin_page' %}" class="btn btn-secondary">ניהול</a>
                     </li>&#160
                 {% endif %}
 

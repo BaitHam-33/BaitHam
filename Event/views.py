@@ -59,9 +59,9 @@ def export_pdf(request):
     lines = []  # creat a new list for the objects
     # print all data we need
     for ev in events:
-        lines.append('Title: ' + ev.name)
+        lines.append('Title: ' + ev.name[::-1])
         lines.append('Date: ' + str(ev.date))
-        lines.append('Details: ' + ev.text)
+        lines.append('Details: ' + ev.text[::-1])
         lines.append('_______________________________________')
         lines.append('    ')
 
