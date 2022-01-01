@@ -22,6 +22,13 @@
         }
     </style>
 </head>
+
+{% if user.is_authenticated %}
+    <b>מחובר בתור {{user.username}}</b>
+    {% endif %}
+    <br>
+    <br>
+
 <body>
 
 <h1 class="font-weight-bold text-center"> דיווחים אחרונים </h1>

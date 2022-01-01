@@ -56,7 +56,6 @@ def export_pdf(request):
     # print all data we need
     for donation in donations:
         lines.append('Donor name: ' + donation.name)
-        lines.append('Donor ID: ' + donation.id_number)
         lines.append('Amount: ' + donation.amount + '₪')
         lines.append('    ')
         lines.append('----------------------------------')
@@ -89,12 +88,12 @@ def export_excel(request):
 
     ws.write(0, 0, 'Revenue report of the "Bait Ham" association:', font_style)  # the title of the file
 
-    columns = ['Name', 'ID Number', 'Amount']  # the columns in the table
+    columns = ['Name', 'Amount']  # the columns in the table
     for col_num in range(len(columns)):
         ws.write(row_num, col_num, columns[col_num], font_style)
 
     # save all the data we need from database
-    rows = Donations.objects.all().values_list('name', 'id_number', 'amount')
+    rows = Donations.objects.all().values_list('name', 'amount')
 
     font_style = xlwt.XFStyle()
 
@@ -116,8 +115,8 @@ def export_excel(request):
 
     font_style = xlwt.XFStyle()
     font_style.font.bold = True
-    ws.write(count + 3, 1, 'Total:', font_style)
-    ws.write(count + 3, 2, str(sum) + '₪', font_style)  # print the total amount
+    ws.write(count + 3, 0, 'Total:', font_style)
+    ws.write(count + 3, 1, str(sum) + '₪', font_style)  # print the total amount
 
     wb.save(response)  # save the file
 

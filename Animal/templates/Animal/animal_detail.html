@@ -27,15 +27,18 @@
         <a role="button" href="{% url 'Animal:deleteAnimal' object.id %}" class="btn btn-secondary">הסר</a>
     {% endif %}
 
-
-<h3>{{object.name}}</h3>
+<br>
+    <br>
+<h3><b>{{object.name}}</b></h3>
  <img  src={% if object.image %}
                 {{ object.image.url }}
         {% else %}
                 "media/default.png"
         {% endif %}
           class="rounded" height=300 width=300 alt="{{ animal.name }}"><br>
-    <h4>תיאור</h4>
+    <br>
+    <br>
+    <ins><h4>קצת פרטים עליי</h4></ins>
 <b>{{object.description}}</b> <br><br>
 
 <b>גזע: {{object.breed}}</b> <br><br>
@@ -45,6 +48,6 @@
 {% else %}
 <b> מין: נקבה</b><br><br>
 {% endif %}
-<a role="button" href="{% url 'contact_us' %}" class="btn btn-primary">אמצו אותי</a>
+<a role="button" href="{% url 'contact_us' %}" class="btn btn-secondary">אמצו אותי</a>
 
 {% endblock content %}

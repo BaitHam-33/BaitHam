@@ -48,11 +48,11 @@
 
         <div class="collapse navbar-collapse text-center" id="navbarNav">
             <ul class="navbar-nav ml-auto">
-                <li>
-                    <a role="button" href="{% url 'Article:articles' %}" class="btn btn-info">מאמרים</a>
-                </li>
-                &#160
+                <li class="nav-item">
 
+                <li>
+                <a role="button" href="{% url 'Article:articles' %}" class="btn btn-info">מאמרים</a>
+                </li> &#160
                 <li>
                     <a role="button" href="{% url 'forum:home' %}" class="btn btn-info">פורום</a>
                 </li>
@@ -82,11 +82,12 @@
                 &#160
 
 
-                {% if user.is_authenticated %}
+                {% if user.is_authenticated and not user.is_superuser %}
                     <li>
                         <a role="button" href="{% url 'volunteer:update' %}" class="btn btn-info">דיווח נוכחות</a>
                     </li>&#160
-
+                    {% endif %}
+                {% if user.is_authenticated %}
                     <li>
                         <a role="button" href="{% url 'Taskboard:all_task' %}" class="btn btn-info">לוח מטלות</a>
                     </li> &#160
@@ -121,8 +122,7 @@
                 {% endif %}
 
                 {% if user.is_authenticated and user.is_superuser %}
-                    <li>&#160
-                        <a role="button" href="{% url 'admin_page' %}" class="btn btn-light">ניהול</a>
+                        <a role="button" href="{% url 'admin_page' %}" class="btn btn-secondary">ניהול</a>
                     </li>&#160
                 {% endif %}
 

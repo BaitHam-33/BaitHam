@@ -4,22 +4,40 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fef0a11c-f8ed-42a6-968f-06ca97908d2e" name="Changes" comment="add event detail html page - topaz">
-      <change afterPath="$PROJECT_DIR$/Stock/filters.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Stock/templates/Stock/selectStock.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/volunteer/templates/volunteer/updateAttend.html" afterDir="false" />
+    <list default="true" id="fef0a11c-f8ed-42a6-968f-06ca97908d2e" name="Changes" comment="changes">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Animal/templates/Animal/add_Animal.html" beforeDir="false" afterPath="$PROJECT_DIR$/Animal/templates/Animal/add_Animal.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Animal/templates/Animal/all_animals.html" beforeDir="false" afterPath="$PROJECT_DIR$/Animal/templates/Animal/all_animals.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Animal/templates/Animal/animal_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/Animal/templates/Animal/animal_detail.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Article/templates/Article/articles.html" beforeDir="false" afterPath="$PROJECT_DIR$/Article/templates/Article/articles.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Donations/templates/Donations/Thankyou.html" beforeDir="false" afterPath="$PROJECT_DIR$/Donations/templates/Donations/Thankyou.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Donations/templates/Donations/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Donations/templates/Donations/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Stock/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/Stock/forms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Donations/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/Donations/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Event/templates/Event/all_events.html" beforeDir="false" afterPath="$PROJECT_DIR$/Event/templates/Event/all_events.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Event/templates/Event/event_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/Event/templates/Event/event_detail.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Event/tests/test_views.py" beforeDir="false" afterPath="$PROJECT_DIR$/Event/tests/test_views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Event/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/Event/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Report/templates/Report/all_reports.html" beforeDir="false" afterPath="$PROJECT_DIR$/Report/templates/Report/all_reports.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Report/templates/Report/createReport.html" beforeDir="false" afterPath="$PROJECT_DIR$/Report/templates/Report/createReport.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Stock/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/Stock/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Stock/templates/Stock/selectStock.html" beforeDir="false" afterPath="$PROJECT_DIR$/Stock/templates/Stock/selectStock.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Stock/templates/Stock/updateStock.html" beforeDir="false" afterPath="$PROJECT_DIR$/Stock/templates/Stock/updateStock.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Stock/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/Stock/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Stock/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/Stock/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Taskboard/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/Taskboard/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Taskboard/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/Taskboard/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Taskboard/templates/Taskboard/all_task.html" beforeDir="false" afterPath="$PROJECT_DIR$/Taskboard/templates/Taskboard/all_task.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Taskboard/templates/Taskboard/task_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/Taskboard/templates/Taskboard/task_detail.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Taskboard/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/Taskboard/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/adopter/templates/adopter/Base.html" beforeDir="false" afterPath="$PROJECT_DIR$/adopter/templates/adopter/Base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/adopter/templates/adopter/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/adopter/templates/adopter/home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/adopter/templates/adopter/reports.html" beforeDir="false" afterPath="$PROJECT_DIR$/adopter/templates/adopter/reports.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/adopter/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/adopter/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/volunteer/templates/volunteer/update.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/volunteer/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/volunteer/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/forum/templates/forum/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/forum/templates/forum/home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/success_story/templates/success_story/all_stories.html" beforeDir="false" afterPath="$PROJECT_DIR$/success_story/templates/success_story/all_stories.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/success_story/templates/success_story/create_story.html" beforeDir="false" afterPath="$PROJECT_DIR$/success_story/templates/success_story/create_story.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/volunteer/templates/volunteer/loginuser.html" beforeDir="false" afterPath="$PROJECT_DIR$/volunteer/templates/volunteer/loginuser.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/volunteer/templates/volunteer/updateAttend.html" beforeDir="false" afterPath="$PROJECT_DIR$/volunteer/templates/volunteer/updateAttend.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/volunteer/tests/test_views.py" beforeDir="false" afterPath="$PROJECT_DIR$/volunteer/tests/test_views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,7 +56,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="main" />
+        <entry key="$PROJECT_DIR$" value="topaz" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -108,6 +126,10 @@
       <workItem from="1639995991062" duration="2313000" />
       <workItem from="1640030553991" duration="4751000" />
       <workItem from="1640120131953" duration="837000" />
+      <workItem from="1640597015719" duration="4747000" />
+      <workItem from="1640638742072" duration="2477000" />
+      <workItem from="1641029202932" duration="5314000" />
+      <workItem from="1641036859262" duration="1835000" />
     </task>
     <task id="LOCAL‎00001" summary="add event detail html page - topaz">
       <created>1640201411767</created>

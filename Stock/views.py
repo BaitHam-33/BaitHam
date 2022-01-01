@@ -58,7 +58,7 @@ def export_pdf(request):
     lines = []  # creat a new list for the objects
     # print all data we need
     for st in stocks:
-        lines.append('Item: ' + str(st.item)[::-1])
+        lines.append('Item: ' + str(st.item))
         lines.append('Amount: ' + str(st.amount))
         lines.append('_______________________________________')
 

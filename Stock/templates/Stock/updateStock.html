@@ -24,7 +24,11 @@
             }
         </style>
     </head>
-
+{% if user.is_authenticated %}
+    <b>מחובר בתור {{user.username}}</b>
+    {% endif %}
+    <br>
+    <br>
 
     <h1>עדכון מלאי עמותה</h1>
     <br>
