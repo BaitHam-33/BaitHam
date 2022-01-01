@@ -48,11 +48,16 @@ def update(request):
         return render(request, 'volunteer/updateAttend.html', {'form': AttendanceForm()})  # refer to attendance report page
     else:
         form = AttendanceForm(request.POST)  # creat a form from attendance model
-        new_attend = form.save(commit=False)
-        new_attend.user = request.user  # link between the report and the logged in user
-        new_attend.save()  # save the report in the database
-        messages.success(request, 'דיווח התווסף בהצלחה!')
-        return redirect('volunteer:update')  # refer to the homepage
+        if form.is_valid():
+            new_attend = form.save(commit=False)
+            new_attend.user = request.user  # link between the report and the logged in user
+            new_attend.save()  # save the report in the database
+            messages.success(request, 'דיווח התווסף בהצלחה!')
+            return redirect('volunteer:update')  # refer to the homepage
+        else:
+            return render(request, 'volunteer/updateAttend.html',
+                          {'form': AttendanceForm(), 'error': 'קלט לא תקין'})
+
 
 
 def export_pdf(request):
