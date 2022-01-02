@@ -5,16 +5,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fef0a11c-f8ed-42a6-968f-06ca97908d2e" name="Changes" comment="changes">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Supplier/tests/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Supplier/tests/test_urls.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Supplier/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/Supplier/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Taskboard/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/Taskboard/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Taskboard/tests/test_forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/Taskboard/tests/test_forms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Taskboard/tests/test_urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/Taskboard/tests/test_urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Taskboard/tests/test_views.py" beforeDir="false" afterPath="$PROJECT_DIR$/Taskboard/tests/test_views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Taskboard/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/Taskboard/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/volunteer/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/volunteer/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/volunteer/templates/volunteer/updateAttend.html" beforeDir="false" afterPath="$PROJECT_DIR$/volunteer/templates/volunteer/updateAttend.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/volunteer/tests/test_views.py" beforeDir="false" afterPath="$PROJECT_DIR$/volunteer/tests/test_views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/volunteer/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/volunteer/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/success_story/test_views.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/success_story/tests/test_views.py" beforeDir="false" afterPath="$PROJECT_DIR$/success_story/tests/test_views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/success_story/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/success_story/views.py" afterDir="false" />
     </list>
-    <list id="84e95356-0e08-4007-b442-5bbec0246c67" name="Changes by AFIK" comment="">
-      <change beforePath="$PROJECT_DIR$/volunteer/tests/test_views.py" beforeDir="false" afterPath="$PROJECT_DIR$/volunteer/tests/test_views.py" afterDir="false" />
-    </list>
+    <list id="84e95356-0e08-4007-b442-5bbec0246c67" name="Changes by AFIK" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -24,8 +30,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Python Unit Test" />
-        <option value="Python Script" />
         <option value="HTML File" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
@@ -36,20 +42,6 @@
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="LineStatusTrackerManager">
-    <file path="$PROJECT_DIR$/volunteer/tests/test_views.py">
-      <ranges>
-        <range start1="0" end1="1" start2="0" end2="1" changelist="fef0a11c-f8ed-42a6-968f-06ca97908d2e" />
-        <range start1="9" end1="9" start2="9" end2="10" changelist="fef0a11c-f8ed-42a6-968f-06ca97908d2e" />
-        <range start1="10" end1="13" start2="11" end2="19" changelist="84e95356-0e08-4007-b442-5bbec0246c67" />
-        <range start1="16" end1="17" start2="22" end2="23" changelist="fef0a11c-f8ed-42a6-968f-06ca97908d2e" />
-        <range start1="25" end1="31" start2="31" end2="34" changelist="84e95356-0e08-4007-b442-5bbec0246c67" />
-        <range start1="34" end1="36" start2="37" end2="39" changelist="fef0a11c-f8ed-42a6-968f-06ca97908d2e" />
-        <range start1="39" end1="41" start2="42" end2="44" changelist="84e95356-0e08-4007-b442-5bbec0246c67" />
-        <range start1="42" end1="42" start2="45" end2="76" changelist="84e95356-0e08-4007-b442-5bbec0246c67" />
-      </ranges>
-    </file>
   </component>
   <component name="ProjectId" id="21b9W409P3fSnfY4A0jUiGm5s2X" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
