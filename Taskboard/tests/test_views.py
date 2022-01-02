@@ -32,3 +32,4 @@ class TestViews(TestCase):
         response = self.client.get(reverse('Taskboard:createTask'))
         self.assertEqual(response.status_code, 200)
         self.assertTemplateUsed(response, 'Taskboard/createTask.html')
+
