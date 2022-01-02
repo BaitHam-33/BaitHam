@@ -17,3 +17,7 @@ class TestUrls(SimpleTestCase):
     def test_createTask_url_is_resolved(self):
         url = reverse('Taskboard:createTask')
         self.assertEquals(resolve(url).func, createTask)
+
+    def test_export_pdf_url_is_resolved(self):
+        url = reverse('Taskboard:export_pdf')
+        self.assertEquals(resolve(url).func, export_pdf)
