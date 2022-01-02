@@ -6,6 +6,11 @@ from Taskboard.models import list_task
 class TestViews(TestCase):
     def setup(self):
         self.client = Client()
+        self.obj = list_task.objects.create(id=1,
+                                         name='task1',
+                                         date='2019-14-21',
+                                         text='Take Rexie to get vaccinated')
+
 
     def test_all_task_GET(self):
         response = self.client.get(reverse('Taskboard:all_task'))
@@ -21,3 +26,9 @@ class TestViews(TestCase):
         self.assertEquals(response.status_code, 200)
         self.assertTemplateUsed(response, 'Taskboard/task_detail.html')
         self.assertTemplateUsed(response, 'adopter/Base.html')
+
+
+    def test_createTask_GET(self):
+        response = self.client.get(reverse('Taskboard:createTask'))
+        self.assertEqual(response.status_code, 200)
+        self.assertTemplateUsed(response, 'Taskboard/createTask.html')
