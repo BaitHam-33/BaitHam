@@ -6,8 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="fef0a11c-f8ed-42a6-968f-06ca97908d2e" name="Changes" comment="add event detail html page - topaz">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Taskboard/tests/test_views.py" beforeDir="false" afterPath="$PROJECT_DIR$/Taskboard/tests/test_views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/forum/tests.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/forum/tests/test_views.py" beforeDir="false" afterPath="$PROJECT_DIR$/forum/tests/test_views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -126,7 +127,19 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="main" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>

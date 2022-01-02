@@ -1,15 +1,14 @@
 
 from django.test import TestCase,Client
-from django.urls import revers
-from Taskboard.models import Project,Category,Expense
-import json
+from django.urls import reverse
+from Taskboard.models import list_task
 
 
 class TestViews(TestCase):
     def setup(self):
         self.client=Client()
-        self.all_task_url= revers('all_task')
-        self.task_detail_url=revers('detail_url')
+        self.all_task_url= reverse('all_task')
+        self.task_detail_url=reverse('detail_url')
 
 
 
@@ -21,4 +20,4 @@ class TestViews(TestCase):
     def test_task_detail_GET(self):
         response = self.client.get(self.task_detail_url)
         self.assertEquals(response.status_cod, 200)
-        self.assertTemplatUsed(response, 'Taskboard/task_detail.html')task_detail
+        self.assertTemplatUsed(response, 'Taskboard/task_detail.html')
