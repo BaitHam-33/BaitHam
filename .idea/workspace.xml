@@ -5,8 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fef0a11c-f8ed-42a6-968f-06ca97908d2e" name="Changes" comment="changes">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Supplier/tests/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Supplier/tests/test_urls.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Supplier/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/Supplier/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Taskboard/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/Taskboard/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Taskboard/tests/test_forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/Taskboard/tests/test_forms.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Taskboard/tests/test_urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/Taskboard/tests/test_urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Taskboard/tests/test_views.py" beforeDir="false" afterPath="$PROJECT_DIR$/Taskboard/tests/test_views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Taskboard/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/Taskboard/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/success_story/test_views.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/success_story/tests/test_views.py" beforeDir="false" afterPath="$PROJECT_DIR$/success_story/tests/test_views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/success_story/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/success_story/views.py" afterDir="false" />
     </list>
     <list id="84e95356-0e08-4007-b442-5bbec0246c67" name="Changes by AFIK" comment="" />
     <option name="SHOW_DIALOG" value="false" />

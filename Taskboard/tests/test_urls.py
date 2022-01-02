@@ -1,7 +1,6 @@
 from django.test import SimpleTestCase
 from django.urls import reverse, resolve
-from Taskboard.views import all_task, task_detail,createTask,export_pdf,export_excel,assignTask,doneTask
-import unittest
+from Taskboard.views import all_task, task_detail, createTask, export_pdf, export_excel, assignTask, doneTask
 
 
 class TestUrls(SimpleTestCase):
@@ -27,9 +26,9 @@ class TestUrls(SimpleTestCase):
         self.assertEquals(resolve(url).func, export_excel)
 
     def test_assignTask_url_is_resolved(self):
-        url = reverse('Taskboard:assignTask')
+        url = reverse('Taskboard:assignTask', args=[2])
         self.assertEquals(resolve(url).func, assignTask)
 
     def test_doneTask_url_is_resolved(self):
-        url = reverse('Taskboard:doneTask')
+        url = reverse('Taskboard:doneTask', args=[2])
         self.assertEquals(resolve(url).func, doneTask)
