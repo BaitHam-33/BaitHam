@@ -18,7 +18,7 @@ div {text-align: -webkit-center;}
     <form action="" class="form-horizontal form_middle" enctype='multipart/form-data' method="POST">
         {% csrf_token %}
         {{ form.as_p }}
-        <button type="submit">הוסף</button>
+        <button type="submit" class="btn btn-dark">הוסף</button>
     </form>
 </div>
  {% endblock %}

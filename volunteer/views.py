@@ -59,7 +59,6 @@ def update(request):
                           {'form': AttendanceForm(), 'error': 'קלט לא תקין'})
 
 
-
 def export_pdf(request):
     """Function for exporting a pdf document from the system"""
     buf = io.BytesIO()
