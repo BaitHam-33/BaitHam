@@ -24,8 +24,9 @@ to a report made by adopter.
 and control the database, edit objects, create objects and delete them. The manger creates the tasks for the volunteers to see.   
 
 #### Environment:
-  the code was devloped on pycharm, the framework is django 4.0.0, most of the code is python, but we have some html and css code
-
+  the code was devloped on pycharm, the framework is django 4.0.0, most of the code is python, but we have some html and css code.
+  Database: SQlite3 
+  
 #### How to run:
 
 ```
