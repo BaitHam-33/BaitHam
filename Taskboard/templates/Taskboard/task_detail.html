@@ -45,6 +45,10 @@
 
 <a role="button" href="{% url 'Taskboard:all_task' %}" class="btn btn-dark"> לכל המטלות </a>
 
-
+<br>
+<br>
+{% if user.is_authenticated and user.is_superuser %}
+        <a href="{% url 'Taskboard:deleteTask' object.id %}" class="btn btn-dark">מחק מטלה</a>
+        {% endif %}
 </body>
 {% endblock content %}

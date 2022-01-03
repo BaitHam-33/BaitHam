@@ -17,13 +17,13 @@ div {text-align: center;}
 </head>
 <body>
 
-    <h1>הוספת מטלה</h1>
+    <h1>הוספת מטלה ללוח המטלות</h1>
     <br>
     <form method="POST">
         {% csrf_token %}
     {{ form.as_p }}
 
-        <button type="submit">Create</button>
+        <button type="submit" class="btn btn-dark">הוסף</button>
     </form>
 
  {% endblock %}

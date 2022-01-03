@@ -44,6 +44,12 @@ def doneTask(request, id):
     list_task.objects.filter(id=id).update(status=True)
     return redirect('Taskboard:all_task')
 
+def deleteTask(request, task_id):
+    """the function delete a task according to the request of the user (admin only) and delete it
+     from the database """
+    task = list_task.objects.get(pk=task_id)
+    task.delete()  # delete the task from the database
+    return redirect('Taskboard:all_task')  # refers to the page of all tasks
 
 def export_pdf(request):
     buf = io.BytesIO()
