@@ -3,6 +3,7 @@ from .forms import storyForm
 from .models import story
 
 
+
 def create_story(request):
     if request.method == 'POST':
         form = storyForm(request.POST)

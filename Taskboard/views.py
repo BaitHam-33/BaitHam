@@ -26,13 +26,13 @@ def task_detail(request, id=None):
 
 
 def createTask(request):
-    if request.method == 'GET':
-        return render(request, 'Taskboard/createTask.html', {'form': TaskForm()})
-    else:
+    if request.method == 'POST':
         form = TaskForm(request.POST)
-        new_task = form.save(commit=False)
-        new_task.save()
-        return redirect('Taskboard:all_task')
+        if form.is_valid():
+            new_task = form.save(commit=False)
+            new_task.save()
+            return redirect('Taskboard:all_task')
+    return render(request, 'Taskboard/createTask.html', {'form': TaskForm()})
 
 
 def assignTask(request, id):
