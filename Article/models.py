@@ -11,4 +11,4 @@ class articles(models.Model):
         return f'name: {self.name}\n type: {self.type}'
 
     class Meta:
-        verbose_name_plural = "articles"
+        verbose_name_plural = "מאמרים"

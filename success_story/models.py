@@ -11,4 +11,4 @@ class story(models.Model):
         return self.name
 
     class Meta:
-        verbose_name_plural = "stories"
+        verbose_name_plural = "סיפורי הצלחה"

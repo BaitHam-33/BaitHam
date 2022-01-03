@@ -32,6 +32,8 @@ class animal(models.Model):
 
     def __str__(self):
         return self.name
+    class Meta:
+        verbose_name_plural = "מאגר בעלי חיים"
 
 
 class Stats(models.Model):
@@ -41,4 +43,4 @@ class Stats(models.Model):
     month = models.IntegerField(blank=True, default=1, validators=[validate_month])
 
     class Meta:
-        verbose_name_plural = "stats"
+        verbose_name_plural = "סטטיסטיקה"

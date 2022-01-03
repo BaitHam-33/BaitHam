@@ -12,6 +12,8 @@ class forum(models.Model):
 
     def __str__(self):
         return str(self.topic)
+    class Meta:
+        verbose_name_plural = "פורום"
 
 
 # child model
@@ -22,3 +24,5 @@ class Discussion(models.Model):
 
     def __str__(self):
         return str(self.forum)
+    class Meta:
+        verbose_name_plural = "דיונים"
