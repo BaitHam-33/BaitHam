@@ -36,7 +36,10 @@
 
     <div>
     {% if user.is_authenticated and user.is_superuser %}
+        <br>
     <a role="button" href="{% url 'Event:createEvent' %}" class="btn btn-dark">צור אירוע חדש</a>
+        <br>
+        <br>
     {% endif %}
     </div>
 <br>

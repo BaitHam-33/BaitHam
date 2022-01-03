@@ -38,7 +38,7 @@
 {% for report in reports %}
 <div class="row justify-content-center my-3">
     <div class="col-md-10">
-        <h5 class="text-muted">{{ report.date|date:'d M Y'|upper }}</h5>
+        <h5 class="text-muted">{{ report.date|date:'d/m/Y'|upper }}</h5>
         <h2>{{ report.name }}</h2>
         <p>{{ report.text|striptags}}</p>
         {% if user.is_authenticated %}
