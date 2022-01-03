@@ -6,32 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="fef0a11c-f8ed-42a6-968f-06ca97908d2e" name="Changes" comment="add event detail html page - topaz">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Animal/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/Animal/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Animal/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/Animal/forms.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Animal/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/Animal/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Animal/templates/Animal/animal_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/Animal/templates/Animal/animal_detail.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Animal/tests/test_forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/Animal/tests/test_forms.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Animal/tests/test_views.py" beforeDir="false" afterPath="$PROJECT_DIR$/Animal/tests/test_views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Animal/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/Animal/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Article/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/Article/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Donations/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/Donations/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Report/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/Report/forms.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Report/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/Report/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Report/tests/test_views.py" beforeDir="false" afterPath="$PROJECT_DIR$/Report/tests/test_views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Report/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/Report/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Report/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/Report/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Stock/tests.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/forum/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/forum/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/forum/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/forum/forms.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/forum/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/forum/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/forum/templates/forum/addInDiscussion.html" beforeDir="false" afterPath="$PROJECT_DIR$/forum/templates/forum/addInDiscussion.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/forum/tests/test_urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/forum/tests/test_urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/forum/tests/test_views.py" beforeDir="false" afterPath="$PROJECT_DIR$/forum/tests/test_views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/forum/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/forum/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/success_story/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/success_story/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/success_story/test_views.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/success_story/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/success_story/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,15 +17,15 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Python Unit Test" />
-        <option value="Python Script" />
         <option value="HTML File" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="main" />
+        <entry key="$PROJECT_DIR$" value="stat_test" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -137,6 +112,7 @@
       <workItem from="1641029202932" duration="5314000" />
       <workItem from="1641036859262" duration="1835000" />
       <workItem from="1641116832542" duration="19036000" />
+      <workItem from="1641208756094" duration="678000" />
     </task>
     <task id="LOCAL‎00001" summary="add event detail html page - topaz">
       <created>1640201411767</created>

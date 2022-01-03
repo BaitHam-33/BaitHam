@@ -1,6 +1,6 @@
 from django.urls import reverse
 from django.test import TestCase, Client
-from Animal.models import animal
+from Animal.models import animal, Stats
 
 
 class TestViews(TestCase):
@@ -15,6 +15,7 @@ class TestViews(TestCase):
             sex='M',
             Adoption='N',
             image='default.png')
+        self.stat = Stats.objects.create(created=2, deleted=1, current=1, month=1)
 
     def test_all_animals_GET(self):
         response = self.client.get(reverse('Animal:all_animals'))
@@ -89,7 +90,6 @@ class TestViews(TestCase):
     def test_delete_Animal_POST(self):
         animal_count = animal.objects.count()
         response = self.client.post(reverse('Animal:deleteAnimal', args=[self.obj.pk]))
-
 
         self.assertFalse(animal.objects.filter(pk=self.obj.pk).exists())
         self.assertEqual(response.status_code, 302)  # means redirection works

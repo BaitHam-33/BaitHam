@@ -67,7 +67,7 @@ def editAnimal(request, id=None):
 
 
 def deleteAnimal(requset, id):
-    '''fuction to delete an animal object by its id '''
+    ''' uction to delete an animal object by its id '''
     animal_obj = animal.objects.get(id=id)
     if requset.method == 'POST':
         if animal_obj.image and animal_obj.image != 'default.png':
