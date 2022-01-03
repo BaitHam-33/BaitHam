@@ -4,16 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fef0a11c-f8ed-42a6-968f-06ca97908d2e" name="Changes" comment="changes">
+    <list default="true" id="fef0a11c-f8ed-42a6-968f-06ca97908d2e" name="Changes" comment="add event detail html page - topaz">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Animal/templates/Animal/DeleteAnimal.html" beforeDir="false" afterPath="$PROJECT_DIR$/Animal/templates/Animal/DeleteAnimal.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Animal/templates/Animal/add_Animal.html" beforeDir="false" afterPath="$PROJECT_DIR$/Animal/templates/Animal/add_Animal.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Animal/templates/Animal/animal_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/Animal/templates/Animal/animal_detail.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Event/templates/Event/all_events.html" beforeDir="false" afterPath="$PROJECT_DIR$/Event/templates/Event/all_events.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Event/templates/Event/createEvent.html" beforeDir="false" afterPath="$PROJECT_DIR$/Event/templates/Event/createEvent.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Report/templates/Report/all_reports.html" beforeDir="false" afterPath="$PROJECT_DIR$/Report/templates/Report/all_reports.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/volunteer/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/volunteer/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/success_story/tests/test_forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/success_story/tests/test_forms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/success_story/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/success_story/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -106,6 +101,7 @@
       <workItem from="1640638742072" duration="2477000" />
       <workItem from="1641029202932" duration="5314000" />
       <workItem from="1641036859262" duration="1835000" />
+      <workItem from="1641229067921" duration="434000" />
     </task>
     <task id="LOCAL‎00001" summary="add event detail html page - topaz">
       <created>1640201411767</created>
