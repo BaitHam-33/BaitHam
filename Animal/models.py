@@ -11,17 +11,19 @@ def validate_month(value):
             params={'value': value},
         )
 
+
 class animal(models.Model):
     Sex_Choice = [('M', 'זכר'), ('F', 'נקבה')]
     Species_choice = [('dog', 'כלב'), ('cat', 'חתול')]
     Adoption_ready = [('N', 'לא'), ('Y', 'כן')]
+
     name = models.CharField(max_length=100, verbose_name="שם")  # Name of the Pet
     submitter = models.CharField(max_length=100, null=True, verbose_name="הוכנס על ידי")  # Name of Submitter
     species = models.CharField(max_length=30, choices=Species_choice, blank=False,
                                default='Dog', verbose_name="סוג")  # What is the Pet species? (dog, cat)
-    breed = models.CharField(max_length=30, blank=True, verbose_name="גזע")  # Pet's breed (can leave empty)
-    description = models.TextField(blank=True, verbose_name="תיאור")  # Description like where was found etc...
-    sex = models.CharField(max_length=30, choices=Sex_Choice, blank=True, verbose_name="מין")  # Gender
+    breed = models.CharField(max_length=30, blank=False, verbose_name="גזע")  # Pet's breed
+    description = models.TextField(blank=False, verbose_name="תיאור")  # Description like where was found etc...
+    sex = models.CharField(max_length=30, choices=Sex_Choice, default='M', blank=False, verbose_name="מין")  # Gender
     submission_date = models.DateTimeField(auto_now_add=True, verbose_name="תאריך קליטה")  # Date submitted to shelter
     image = models.ImageField(upload_to='Animal', blank=True, default='default.png',
                               verbose_name="העלאת תמונה")  # for animal images
@@ -30,6 +32,8 @@ class animal(models.Model):
 
     def __str__(self):
         return self.name
+    class Meta:
+        verbose_name_plural = "מאגר בעלי חיים"
 
 
 class Stats(models.Model):
@@ -37,3 +41,6 @@ class Stats(models.Model):
     deleted = models.IntegerField(blank=True, default=0)
     current = models.IntegerField(blank=True, default=0)
     month = models.IntegerField(blank=True, default=1, validators=[validate_month])
+
+    class Meta:
+        verbose_name_plural = "סטטיסטיקה"

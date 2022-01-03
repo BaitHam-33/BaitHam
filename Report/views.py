@@ -5,13 +5,13 @@ from .forms import ReportForm
 
 def createReport(request):
     """the function creat a new report according to the request of the user and save it in the database"""
-    if request.method == 'GET':
-        return render(request, 'Report/createReport.html', {'form': ReportForm()})
-    else:
+    if request.method == 'POST':
         form = ReportForm(request.POST)  # creat a form for the report
-        new_report = form.save(commit=False)
-        new_report.save()  # saving the new report in the database
-        return redirect('Report:all_reports')  # refers to the page of all reports
+        if form.is_valid():
+            new_report = form.save(commit=False)
+            new_report.save()  # saving the new report in the database
+            return redirect('Report:all_reports')  # refers to the page of all reports
+    return render(request, 'Report/createReport.html', {'form': ReportForm()})
 
 
 def all_reports(request):
@@ -26,5 +26,3 @@ def deleteReport(request, report_id):
     Report = report.objects.get(pk=report_id)
     Report.delete()  # delete the report from the database
     return redirect('Report:all_reports')  # refers to the page of all reports
-
-

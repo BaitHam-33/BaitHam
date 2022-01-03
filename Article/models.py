@@ -9,3 +9,6 @@ class articles(models.Model):
     link = models.CharField(max_length=2000, default=None)
     def __str__(self):
         return f'name: {self.name}\n type: {self.type}'
+
+    class Meta:
+        verbose_name_plural = "מאמרים"

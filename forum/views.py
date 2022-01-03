@@ -1,62 +1,52 @@
-from django.shortcuts import render
-
-# Create your views here.
 from django.shortcuts import render, redirect
-from .models import *
+from .models import forum, Discussion
 from .forms import *
 
 
-# Create your views here.
-
 def home(request):
-    forums = forum.objects.all()
-    count = forums.count()
-    discussions = []
-    comment=CreateInDiscussion()
+    '''the function collect all the database data for forum and display it on a page '''
+    forums = forum.objects.all()  # getting all subject -> to send for the template and display them
+    count = forums.count()  # counting all subjects to show the count in the template
+    discussions = []  # List of comments
+    comment = CreateInDiscussion()
     for i in forums:
-        discussions.append(i.discussion_set.all())
-    if request.method=='POST':
-        comment = CreateInDiscussion(request.POST)
-        if comment.is_valid():
-            comment.save()
-            return redirect('forum:home')
-    context = {'forums': forums,
+        discussions.append(i.discussion_set.all())  # adding the comments to each forum
+
+    context = {'forums': forums,  # a dictionary to send all the info to the template
                'count': count,
                'discussions': discussions,
-               'comment':comment}
+               'comment': comment}
     return render(request, 'forum/home.html', context)
 
 
 def addInForum(request):
-    form = CreateInForum()
+    ''' function to add new subject to talk about in the forum '''
     if request.method == 'POST':
-        form = CreateInForum(request.POST)
-        if form.is_valid():
-            form.save()
-            return redirect('forum:home')
-    context = {'form': form}
+        form = CreateInForum(request.POST)  # the subject form with POST data
+        if form.is_valid():  # validation check
+            form.save()     # if valid we need to save
+            return redirect('forum:home')  # if fill correctly the comment will add we be back in the forum home page
+
+    # request.method == 'GET'
+    form = CreateInForum()  # empty subject form
+    context = {'form': form}  # a dictionary to send all the info to the template
     return render(request, 'forum/addInForum.html', context)
 
 
 def addInDiscussion(request):
-
-    form = CreateInDiscussion()
+    ''' function to add new comment to a specific subject '''
+    msg = None
     if request.method == 'POST':
-        form = CreateInDiscussion(request.POST)
-        if form.is_valid():
-            form.save()
-            return redirect('forum:home')
-    context = {'form': form}
-    return render(request, 'forum/addInDiscussion.html', context)
+        form = CreateInDiscussion(request.POST)  # the comment form with POST data
 
+        if form.is_valid() and form.cleaned_data.get('forum') != None:  # validation check
+            form.save()  # if valid we need to save
+            return redirect('forum:home')  # if fill correctly the comment will add we be back in the forum home page
 
-# def pages(request):
-#     context = {}
-#     # All resource paths end in .html.
-#     # Pick out the html file name from the url. And load that template.
-#     load_template = request.path.split('/')[-1]
-#     context['segment'] = load_template
-#
-#     html_template = loader.get_template('forum/' + load_template)
-#     return HttpResponse(html_template.render(context, request))
+        if form.cleaned_data.get('forum') == None:  # o send a proper error msg
+            msg = 'יש לבחור נושא תקין עליו תרצה להגיב'
 
+    # request.method == 'GET' or not Valid form
+    form = CreateInDiscussion()  # empty comment form
+    context = {'form': form, 'msg': msg}  # a dictionary to send all the info to the template
+    return render(request, 'forum/addInDiscussion.html', context)  # GET or not valid form render the empty form

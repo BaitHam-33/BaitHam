@@ -12,6 +12,7 @@ from reportlab.lib.pagesizes import letter
 import io
 import xlwt
 
+
 def all_animals(request):
     if request.user.is_authenticated:
         animals = animal.objects.all()
@@ -26,54 +27,35 @@ def all_animals(request):
 
 
 def add_Animal(request):
-    if request.method == 'GET':
-        return render(request, 'Animal/add_Animal.html', {'form': Add_Animal_Form()})
-    else:
+    ''' the function will add animal to the database using a form '''
+    if request.method == 'POST':
         form = Add_Animal_Form(request.POST, request.FILES)
-        if form.is_valid():
-            name = form.cleaned_data.get("name")
-            submitter = form.cleaned_data.get("submitter")
-            species = form.cleaned_data.get("species")
-            breed = form.cleaned_data.get("breed")
-            description = form.cleaned_data.get("description")
-            sex = form.cleaned_data.get("sex")
-            Adoption = form.cleaned_data.get("Adoption")
-            submission_date = form.cleaned_data.get("submission_date")
-            image = form.cleaned_data.get("image")
-            obj = animal.objects.create(
-                name=name,
-                submitter=submitter,
-                species=species,
-                breed=breed,
-                description=description,
-                sex=sex,
-                Adoption=Adoption,
-                submission_date=submission_date,
-                image=image
-            )
-            obj.save()
+        if form.is_valid():  # data validation
+            form.save()
             stat = Stats.objects.last()
-            stat.created += 1
-            stat.current = animal.objects.count()
+            stat.created += 1  # statistics updating
+            stat.current = animal.objects.count()  # statistics updating
             stat.save()
-        else:
-            print(form.errors)  # in case of errors in validation
-        return redirect('Animal:all_animals')
+            return redirect('Animal:all_animals')
+    # GET or Not valid form
+    return render(request, 'Animal/add_Animal.html', {'form': Add_Animal_Form()})
 
 
 def Animal_detail(request, id):
+    ''' function to get an id of a specific animal and send all the info on it'''
     animal_obj = None
     if id is not None:
-        animal_obj = animal.objects.get(id=id)
+        animal_obj = animal.objects.get(id=id)  # getting the right animal
     context = {"object": animal_obj}
-    return render(request, 'Animal/animal_detail.html', context=context)
+    return render(request, 'Animal/animal_detail.html', context=context)  # sending the info
 
 
 def editAnimal(request, id=None):
+    ''' function to edit the info of a specific animal '''
     if id is not None:
-        animal_up = animal.objects.get(id=id)
-        form = Add_Animal_Form(instance=animal_up)
-        if request.method == 'POST':
+        animal_up = animal.objects.get(id=id)  # getting the right animal
+        form = Add_Animal_Form(instance=animal_up)  # showing the form filled with the animal info
+        if request.method == 'POST':  # after pressing add we get the update info
             form = Add_Animal_Form(request.POST, request.FILES, instance=animal_up)
             if form.is_valid():
                 form.save()
@@ -81,10 +63,11 @@ def editAnimal(request, id=None):
         context = {"form": form}
         return render(request, 'Animal/add_Animal.html', context=context)
 
-    return redirect('Animal:all_animals')
+    return redirect('Animal:all_animals')  # in the case of bad id sent here
 
 
 def deleteAnimal(requset, id):
+    ''' uction to delete an animal object by its id '''
     animal_obj = animal.objects.get(id=id)
     if requset.method == 'POST':
         if animal_obj.image and animal_obj.image != 'default.png':
@@ -99,6 +82,7 @@ def deleteAnimal(requset, id):
 
     context = {'animal': animal_obj}
     return render(requset, 'Animal/DeleteAnimal.html', context)
+
 
 def export_pdf(request):
     """Function for exporting a pdf document from the system"""

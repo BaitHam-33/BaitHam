@@ -1,17 +1,17 @@
 from django.shortcuts import render, redirect
 from .forms import storyForm
 from .models import story
-from volunteer import views
+
+
 
 def create_story(request):
-    if request.method == 'GET':
-        return render(request, 'success_story/create_story.html', {'form': storyForm()})
-    else:
+    if request.method == 'POST':
         form = storyForm(request.POST)
-        new_story = form.save()
-        new_story.save()
-        return redirect('success_story:all_stories')
-
+        if form.is_valid():
+            new_story = form.save()
+            new_story.save()
+            return redirect('success_story:all_stories')
+    return render(request, 'success_story/create_story.html', {'form': storyForm()})
 
 def all_stories(request):
     stories = story.objects.all()

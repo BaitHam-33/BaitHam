@@ -1,4 +1,7 @@
 from django.contrib import admin
 from .models import stock
 
-admin.site.register(stock)
+class stockAdmin(admin.ModelAdmin):
+    list_display = ['item', 'amount']
+
+admin.site.register(stock, stockAdmin)

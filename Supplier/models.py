@@ -11,3 +11,5 @@ class SupplierRegistration(models.Model):
      def __str__(self):
           return f'Supplier name: {self.Supplier_name}\n\t,   phone number :{self.phone_number}\n'
 
+     class Meta:
+          verbose_name_plural = "ספקים"
