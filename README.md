@@ -10,18 +10,25 @@
 
 #### Description:
 
-The project is part of "Fundamentals in Software Engineering" course. 
+The project is part of a "Fundamentals in Software Engineering" course. 
 We are group #33.
 This is a website for an animal shelter. 
+
 The website have three users: 
-* Adopters - the regular user, annonymos user, this user can read articles and success stories, donate to the shelter, view the animals available for adoption, adopt an animal,
-reoprt for an abuse or missing animal, view reports (like how many animals in the shelter and more), get info about upcoming event and ask question in the forum.
-* Volunteer - the staff at shelter, have more permissions compare to the adopters. The staff can see all the pages like the adopter but can do more things for example: 
-to add/edit/delete an animal to/from the database, also the volunteers have a Task board in it they can see all the "to do task" and assign themself for a task. The Volunteers 
-can log in to their account and report thier attandence, Moreover they can download all kind of useful reports to their computers. Beside that they can respond in forum and respond
-to a report made by adopter.
-* Manager- the manager of the shelter is the person with all the permissions, he create users in the database (the volunteer users), he can download all the reports, view evrything
-and control the database, edit objects, create objects and delete them. The manger creates the tasks for the volunteers to see.   
+* Adopter - the regular user, anonymous user. 
+This user can read articles and upload his success story with his adopted animal, donate to the shelter, view the animals available for adoption, and adopt an animal.
+In addition, he can report an abandoned animal or animal abuse, export reports from the system (like how many animals are in the shelter, the association's income from donations and more), get information about upcoming events and ask questions in the forum.
+
+* Volunteer - the staff at the shelter. he have more permissions compared to the adopters.
+The staff can see all the pages like the adopter but can do more things. 
+The Volunteer needs to log in to his account in order to use the permissions he has.
+He can add / edit / delete an animal to / from the database. 
+also, the volunteer has a Taskboard on the site that he can see all the "to-do tasks" and assign himself for a task. 
+he can download all kinds of useful reports to his computer and report his monthly attendance.
+Besides that, he can respond in the forum to questions asked by the adopters, and his other job is to respond to reports received from the field (about abuse or abandonment).
+
+* Manager- the manager of the shelter is the person with all the permissions, he create users in the database (the volunteer users), he can export all the reports, view everything and control the database, edit objects, create objects and delete them.
+The manager adds new tasks to the Taskboard, and the volunteers can assign themselves.
 
 #### Environment:
   the code was devloped on pycharm, the framework is django 4.0.0, most of the code is python, but we have some html and css code.
