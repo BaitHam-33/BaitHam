@@ -64,6 +64,8 @@ pip install xlwt==1.3.0
 ```
 
  #### Access the web app in browser: http://127.0.0.1:8000/
+ #### Access the web site: https://bait-ham.herokuapp.com/
+
  
 # Unit Test
 ```
